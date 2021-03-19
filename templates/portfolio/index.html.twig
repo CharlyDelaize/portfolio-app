@@ -1,86 +1,252 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <!-- Liens Bootsrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-</head>
-{% block body %}
-<body>
-<header>
-    <nav class="navbar">
-        <a href="#">À Propos</a>
-        <a href="#">Parcours</a>
-        <a href="#">Compétences</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
-    </nav>
-    <h1>Charly Delaize</h1>
-    <h2>A propos de moi</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu urna sem. Etiam placerat tempus posuere. Quisque ut leo nec lorem tempus euismod. Aenean justo urna, dictum placerat quam a, accumsan porta tortor. Cras vel enim eget magna commodo vulputate eget eget elit. Suspendisse elementum tempor sem. Integer sagittis, arcu. </p>
-<header>
-<main>
-    <h2>Parcours</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu urna sem. Etiam placerat tempus posuere. Quisque ut leo nec lorem tempus euismod. Aenean justo urna, dictum placerat quam a, accumsan porta tortor. Cras vel enim eget magna commodo vulputate eget eget elit. Suspendisse elementum tempor sem. Integer sagittis, arcu. </p>
-        <input type="button" value="Voir le CV">
-    <h2>Compétences</h2>
-        <img src="images/git.png">
-        <img src="images/html_css.png">
-        <img src="images/javascript.png">
-        <img src="images/wordpress.png">
-        <img src="images/bootstrap.png">
-        <img src="images/php.png">
-        <img src="images/angular2.png">
-        <img src="images/ajax2.png">
-        <img src="images/symphony2.png">
-        <img src="images/gitkraken.png">
-        <img src="images/visual_studio.png">
-        <img src="images/xampp.png">
-    <h2>Portfolio</h2>
-        <div class="boutique"></div>
-        <div class="crud"></div>
-        <div class="facture"></div>
-        <div class="sport"></div>
-    <h2>Contact</h2>
-        <div class="contact">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu urna sem. Etiam placerat tempus posuere. Quisque ut leo nec lorem tempus euismod.</p>
-        </div>
-        <div class="formulaire">
-            <form>
-                <label for="nom">Nom</label>
-                <input type="text" id="nom"><br>
-                <label for="nom">Prénom</label>
-                <input type="text" id="nom"><br>
-                <label for="nom">E-mail</label>
-                <input type="email" id="nom"><br>
-                <label for="nom">Téléphone</label>
-                <input type="text" id="telephone"><br>
-                <label for="nom">Message</label>
-                <textarea></textarea><br>
-                <input type="submit" value="Envoyer">
-            </form>
-        </div>
-</main>
-<footer>
-    &copy; 2021, Charly Delaize
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <!-- Liens Bootsrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <style>
+            body{
+                background-color: rgb(234, 234, 234);
+                margin: 0 auto;
+            }
 
-    <i class="fab fa-linkedin"></i>
-    <i class="fab fa-github-square"></i>
-</footer>
+            .navbar{
+                background-color: rgb(0, 149, 213);
+                opacity: 0.8;
+                flex-direction: row-reverse;
+                position: fixed;
+                width: 100%
+            }
 
-<style>
-    img{
-        width: 5%;
-    }
+            .navbar a{
+                color: white;
+                text-decoration: none;
+                margin-right: 1em;
+            }
+            
+            h1{
+                padding: 10em;
+            }
 
-    .navbar{
-        background-color: rgb(0, 149, 213);
-    }
-</style>
-</body>
-{% endblock %}
+            h1, h2{
+                text-align: center;
+            }
+
+            .propos{
+                background-color: rgb(0, 100, 175);
+                color: white;
+                padding: 20em;
+            }
+
+            .propos h2{
+                padding-bottom: 1em;
+            }
+
+            .parcours{
+                background-color: rgb(2, 66, 115);
+                color: white;
+                padding: 20em;
+            }
+
+            .parcours h2{
+                padding-bottom: 1em;
+            }
+
+            .propos p, .parcours p, .competences p{
+                margin: 0 auto;
+                width: 70%;
+            }
+
+            #cv{
+                margin-left: 60em;
+            }
+
+            .competences{
+                width: 70%;
+                margin: 0 auto;
+                padding: 10em;
+            }
+
+            .competences h2{
+                padding-bottom: 1em;
+            }
+
+            .competences img{
+                margin-left: 5em;
+                width: 2%;
+            }
+
+            #portfolio{
+                margin-left: 39em;
+            }
+
+            .boutique{
+                height: 11vh; /* viewport height */
+                width: 18vh;
+                padding: 5vh;
+                background-image: url(images/boutique_icone.png);
+                background-repeat: no-repeat;
+                border: 1px solid skyblue;
+                margin: 2vh;
+                float: left;
+            }
+
+            .crud{
+                height: 11vh; /* viewport height */
+                width: 18vh;
+                padding: 5vh;
+                background-image: url(images/facture_icone.png);
+                background-repeat: no-repeat;
+                border: 1px solid skyblue;
+                margin: 2vh;
+                float: left;
+            }
+
+            .facture{
+                height: 11vh; /* viewport height */
+                width: 18vh;
+                padding: 5vh;
+                background-image: url(images/articles_icone.png);
+                background-repeat: no-repeat;
+                border: 1px solid skyblue;
+                margin: 2vh;
+                float: left;
+            }
+
+            .contact{
+                width: 70%;
+                margin: 0 auto;
+                padding: 10em;
+            }
+
+            .contact h2{
+                padding-bottom: 1em;
+            }
+
+            .info{
+                float: left;
+                width: 40%;
+                margin-left: 5em;
+            }
+
+            .formulaire{
+                float: left;
+                width: 40%;
+                margin-left: 2em;
+            }
+            
+            textarea{
+                margin-top: 1em;
+            }
+
+            footer{
+                width: 100%;
+                margin-top: 10em;
+                padding: 1em;
+                color: white;
+                background-color:rgb(0, 149, 213);
+            }
+
+            footer i{
+                font-size: 30px;
+                float: right;
+                padding-right: 1em;
+                color : white;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    {% block body %}
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="lien">
+                    <a href="#propos">À Propos</a>
+                    <a href="#parcours">Parcours</a>
+                    <a href="#competences">Compétences</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <h1>Charly Delaize</h1>
+            <article class="propos" id="propos">
+                <h2>A propos de moi</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu urna sem. Etiam placerat tempus posuere. Quisque ut leo nec lorem tempus euismod. Aenean justo urna, dictum placerat quam a, accumsan porta tortor. Cras vel enim eget magna commodo vulputate eget eget elit. Suspendisse elementum tempor sem. Integer sagittis, arcu. </p>
+            </article>
+            <article class="parcours" id="parcours">
+                <h2>Parcours</h2>
+                <p>J'ai fait un BTS SIO (Service Informatique aux Organisations) et des études de graphisme, et après un stage informatique en réseau, je suis parti sur une formation de développeur.</p>
+                <p>J'ai obtenu un stage en informatique qui s'est bien déroulé (collaborateurs bienveillants, bon environnement), où je préparais et configurais des ordinateurs neufs. A la suite de ce stage, ma tutrice m'a conseillé d'aller vers le développement.</p>
+                <p>J'ai commencé à réviser les langages HTML et CSS avant d'aller à la formation. J'ai trouvé cela intéressant. La formation se déroule bien et je fais partie des meilleurs de la classe. </p>
+                <button type="button" class="btn btn-primary" id="cv">Voir le CV</button>
+            </article>
+            <article class="competences" id="competences">
+                <h2>Compétences</h2>
+                <ul>
+                <img src="images/git.png" alt="git"> Git
+                <img src="images/html.png" alt="html"> HTML
+                <img src="images/css.png" alt="css"> CSS
+                <img src="images/javascript.png" alt="javascript"> Javascript
+                <img src="images/wordpress.png" alt="wordpress"> Wordpress
+                <img src="images/bootstrap.png" alt="bootstrap"> Bootstrap
+                <img src="images/php.png" alt="php"> PHP
+                <img src="images/angular2.png" alt="angular"> Angular
+                <img src="images/ajax2.png" alt="ajax"> Ajax
+                <img src="images/symphony2.png" alt="symfony"> Symfony
+                <img src="images/gitkraken.png" alt="gitkraken"> Gitkraken
+                <img src="images/xampp.png" alt="xampp"> Xampp
+                <img src="images/visual_studio.png" alt="visual"> Visual Studio Code
+                <!-- <ul>
+                    <li><i class="fab fa-git-alt"></i></li>
+                    <li><i class="fab fa-html5"></i></li>
+                    <li><i class="fab fa-css3-alt"></i></li>
+                    <li><i class="fab fa-js"></i></li>
+                    <li><i class="fab fa-wordpress"></i></li>
+                    <li><i class="fab fa-bootstrap"></i></li>
+                    <li><i class="fab fa-php"></i></li>
+                    <li><i class="fab fa-angular"></i></li>
+                    <li><i class="fab fa-symfony"></i></li>
+                    <li><i class="fab fa-gitkraken"></i></li>
+                </ul> -->
+            </article>
+            <h2>Portfolio</h2>
+            <article id="portfolio">
+                <div class="boutique"></div>
+                <div class="crud"></div>
+                <div class="facture"></div>
+                <div class="sport"></div>
+            </article>
+            <article class="contact">
+                <h2 id="contact">Contact</h2>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu urna sem. Etiam placerat tempus posuere. Quisque ut leo nec lorem tempus euismod.</p>
+                </div>
+                <div class="formulaire">
+                    <form>
+                        <label for="nom">Nom</label>
+                        <input type="text" class="form-control" id="nom">
+                        <label for="nom">Prénom</label>
+                        <input type="text" class="form-control" id="prenom">
+                        <label for="nom">E-mail</label>
+                        <input type="email" class="form-control" id="email">
+                        <label for="nom">Message</label><br>
+                        <textarea></textarea>
+                        <input type="submit" value="Envoyer">
+                    </form>
+                </div>
+            </article>
+        </main>
+        <footer>
+            &copy; 2021, Charly Delaize
+            <a href="https://www.linkedin.com/in/charly-delaize-5a771580/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/CharlyDelaize" target="_blank"><i class="fab fa-github-square"></i></a>
+        </footer>
+    </body>
+    {% endblock %}
 </html>
