@@ -27,7 +27,7 @@
                 text-decoration: none;
                 margin-right: 1em;
             }
-            
+
             h1{
                 padding: 10em;
             }
@@ -80,12 +80,12 @@
                 width: 2%;
             }
 
-            #portfolio{
-                margin-left: 39em;
+            #portfolio .boutique{
+                margin-left: 40.5em;
             }
 
             .boutique{
-                height: 11vh; /* viewport height */
+                height: 8vh; /* viewport height */
                 width: 18vh;
                 padding: 5vh;
                 background-image: url(images/boutique_icone.png);
@@ -96,7 +96,7 @@
             }
 
             .crud{
-                height: 11vh; /* viewport height */
+                height: 8vh; /* viewport height */
                 width: 18vh;
                 padding: 5vh;
                 background-image: url(images/facture_icone.png);
@@ -107,7 +107,7 @@
             }
 
             .facture{
-                height: 11vh; /* viewport height */
+                height: 8vh; /* viewport height */
                 width: 18vh;
                 padding: 5vh;
                 background-image: url(images/articles_icone.png);
@@ -136,16 +136,21 @@
             .formulaire{
                 float: left;
                 width: 40%;
-                margin-left: 2em;
+                margin-left: 2em
             }
-            
-            textarea{
+
+            .formulaire button{
                 margin-top: 1em;
+            }
+
+            #voirMessage{
+                color: white;
+                text-decoration: none;
             }
 
             footer{
                 width: 100%;
-                margin-top: 10em;
+                margin-top: 13em;
                 padding: 1em;
                 color: white;
                 background-color:rgb(0, 149, 213);
@@ -188,7 +193,6 @@
             </article>
             <article class="competences" id="competences">
                 <h2>Compétences</h2>
-                <ul>
                 <img src="images/git.png" alt="git"> Git
                 <img src="images/html.png" alt="html"> HTML
                 <img src="images/css.png" alt="css"> CSS
@@ -215,8 +219,8 @@
                     <li><i class="fab fa-gitkraken"></i></li>
                 </ul> -->
             </article>
-            <h2>Portfolio</h2>
             <article id="portfolio">
+                <h2>Portfolio</h2>
                 <div class="boutique"></div>
                 <div class="crud"></div>
                 <div class="facture"></div>
@@ -228,17 +232,14 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu urna sem. Etiam placerat tempus posuere. Quisque ut leo nec lorem tempus euismod.</p>
                 </div>
                 <div class="formulaire">
-                    <form>
-                        <label for="nom">Nom</label>
-                        <input type="text" class="form-control" id="nom">
-                        <label for="nom">Prénom</label>
-                        <input type="text" class="form-control" id="prenom">
-                        <label for="nom">E-mail</label>
-                        <input type="email" class="form-control" id="email">
-                        <label for="nom">Message</label><br>
-                        <textarea></textarea>
-                        <input type="submit" value="Envoyer">
-                    </form>
+                    {{ form_start(formulaire) }}
+                        {{ form_row(formulaire.nom) }}
+                        {{ form_row(formulaire.prenom) }}
+                        {{ form_row(formulaire.email) }}
+                        {{ form_row(formulaire.message) }}
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                        <button type="submit" class="btn btn-danger"><a href="/read-all" id="voirMessage">Voir les messages</a></button>
+                    {{ form_end(formulaire) }}
                 </div>
             </article>
         </main>

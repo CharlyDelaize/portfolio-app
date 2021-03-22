@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+    .card{
+        margin: 0 auto;
+    }
+    </style>
+{% endblock %}
+
+{% block body %}
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{ contact.prenom }}{{ contact.nom }}</h5>
+    <p>{{ contact.email }}</p>
+    <p>{{ contact.message }}</p>
+    <a href="#" class="btn btn-primary">Retour</a>
+  </div>
+</div>
+
+{% endblock %}
