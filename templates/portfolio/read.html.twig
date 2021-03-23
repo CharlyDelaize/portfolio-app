@@ -3,20 +3,60 @@
 {% block stylesheets %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
+    body{
+      background-color: rgb(234, 234, 234);
+      margin: 0 auto;
+    }
+
+    .navbar{
+      background-color: rgb(0, 149, 213);
+      opacity: 0.8;
+      width: 100%;
+    }
+
+    h1{
+      color: white;
+      margin: 0 auto;
+    }
+
     .card{
-        margin: 0 auto;
+      margin: 0 auto;
+      margin-top: 1.4em;
+    }
+
+    footer{
+      width: 100%;
+      margin-top: 39.25em;
+      padding: 1em;
+      color: white;
+      background-color: rgb(0, 149, 213);
+    }
+
+    footer i{
+      font-size: 30px;
+      float: right;
+      padding-right: 1em;
+      color : white;
+      text-decoration: none;
     }
     </style>
 {% endblock %}
 
 {% block body %}
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">{{ contact.prenom }}{{ contact.nom }}</h5>
-    <p>{{ contact.email }}</p>
-    <p>{{ contact.message }}</p>
-    <a href="#" class="btn btn-primary">Retour</a>
-  </div>
-</div>
-
+    <header>
+        <nav class="navbar">
+            <h1>Admin</h1>
+        </nav>
+    </header>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{ contact.prenom }}{{ contact.nom }}</h5>
+            <p>{{ contact.email }}</p>
+            <p>{{ contact.message }}</p>
+            <a href="/read-all" class="btn btn-primary">Retour</a>
+        </div>
+    </div>
+    <footer>
+        &copy; 2021, Charly Delaize
+    </footer>
 {% endblock %}

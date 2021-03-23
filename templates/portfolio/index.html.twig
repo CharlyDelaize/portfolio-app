@@ -1,3 +1,6 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -165,7 +168,8 @@
             }
         </style>
     </head>
-    {% block body %}
+{% endblock %}
+{% block body %}
     <body>
         <header>
             <nav class="navbar">
@@ -175,6 +179,7 @@
                     <a href="#competences">Compétences</a>
                     <a href="#portfolio">Portfolio</a>
                     <a href="#contact">Contact</a>
+                    <a href="/login">Connexion</a>
                 </div>
             </nav>
         </header>
@@ -182,7 +187,7 @@
             <h1>Charly Delaize</h1>
             <article class="propos" id="propos">
                 <h2>A propos de moi</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu urna sem. Etiam placerat tempus posuere. Quisque ut leo nec lorem tempus euismod. Aenean justo urna, dictum placerat quam a, accumsan porta tortor. Cras vel enim eget magna commodo vulputate eget eget elit. Suspendisse elementum tempor sem. Integer sagittis, arcu. </p>
+                <p>J'ai toujours été intéressé par l'informatique. J'ai eu un PC enfant et j'ai découvert cet univers, je me suis adapté aux évolutions (Windows 98, XP). Pendant mes études de graphisme, j'ai travaillé sur Mac.</p>
             </article>
             <article class="parcours" id="parcours">
                 <h2>Parcours</h2>
@@ -229,7 +234,7 @@
             <article class="contact">
                 <h2 id="contact">Contact</h2>
                 <div class="info">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu urna sem. Etiam placerat tempus posuere. Quisque ut leo nec lorem tempus euismod.</p>
+                    <p>Vous pouvez envoyer un message en remplissant le formulaire ici présent</p>
                 </div>
                 <div class="formulaire">
                     {{ form_start(formulaire) }}
@@ -238,7 +243,7 @@
                         {{ form_row(formulaire.email) }}
                         {{ form_row(formulaire.message) }}
                         <button type="submit" class="btn btn-primary">Envoyer</button>
-                        <button type="submit" class="btn btn-danger"><a href="/read-all" id="voirMessage">Voir les messages</a></button>
+                        <button type="button" class="btn btn-danger"><a href="/read-all" id="voirMessage">Voir les messages</a></button>
                     {{ form_end(formulaire) }}
                 </div>
             </article>
@@ -249,5 +254,5 @@
             <a href="https://github.com/CharlyDelaize" target="_blank"><i class="fab fa-github-square"></i></a>
         </footer>
     </body>
-    {% endblock %}
 </html>
+{% endblock %}

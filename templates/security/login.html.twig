@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    {% if error %}
+        <div>{{ error.messageData }}</div>
+    {% endif %}
+
+    <form action="{{ path('login') }}" method="POST">
+        <label for="username">Nom d'utilisateur:</label><br>
+        <input type="text" id="username" name="_username" value="{{ last_username }}" /><br>
+
+        <label for="password">Mot de passe :</label><p><br>
+        <input type="text" id="password" name="_password" /><br>
+
+        <button type="submit" class="btn btn-primary">Se connecter</button>
+
+        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            <p>Email: {{ app.user.email }}</p>
+        {% endif %}
+        
+    </form>
+{% endblock %}
