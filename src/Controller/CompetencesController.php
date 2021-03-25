@@ -35,6 +35,43 @@ class CompetencesController extends AbstractController
     }
 
     /**
+     * @Route("/edit-competences/{id<\d+>}")
+     */
+    public function edit(Request $request, Competences $competences)
+    {
+        $form = $this->createForm(CompetencesType::class, $competences);
+        $form->handleRequest($request);
+
+        if($form->isSubmitted() && $form->isValid()){
+            $this->getDoctrine()->getManager()->flush();
+        }
+
+        return $this->render('competences/edit-competences.html.twig', array(
+            'formulaire' => $form->CreateView(),
+        ));
+    }
+
+    /**
+     * @Route("/delete-competences/{id<\d+>}")
+     */
+    public function delete(Competences $competences){
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($competences);
+        $em->flush();
+
+        return $this->redirect('../read-all-competences');
+    }
+
+    /**
+     * @Route("/read-competences/{id<\d+>}")
+     */
+    public function read(Competences $competences){
+        return $this->render('competences/read-competences.html.twig', array(
+            'competences' => $competences
+        ));
+    }
+
+    /**
      * @Route("/read-all-competences")
      */
     public function readAll(){

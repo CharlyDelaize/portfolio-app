@@ -23,8 +23,12 @@ class Competences{
      * @ORM\Column(type="string")
      */
     private $titre;
-
-    private $image;
+    /**
+     * @Assert\NotBlank(message = "Veuillez entrer un nom")
+     * 
+     * @ORM\Column(type="string")
+     */
+    private $logo;
 
     private $tableau;
 
@@ -54,7 +58,7 @@ class Competences{
     }
 
     /**
-     * Get the value of langage
+     * Get the value of titre
      */ 
     public function getTitre()
     {
@@ -62,7 +66,7 @@ class Competences{
     }
 
     /**
-     * Set the value of langage
+     * Set the value of titre
      *
      * @return  self
      */ 
@@ -74,21 +78,21 @@ class Competences{
     }
 
     /**
-     * Get the value of image
+     * Get the value of logo
      */ 
-    public function getImage()
+    public function getLogo()
     {
-        return $this->image;
+        return $this->logo;
     }
 
     /**
-     * Set the value of image
+     * Set the value of logo
      *
      * @return  self
      */ 
-    public function setImage($image)
+    public function setLogo($logo)
     {
-        $this->image = $image;
+        $this->logo = $logo;
 
         return $this;
     }

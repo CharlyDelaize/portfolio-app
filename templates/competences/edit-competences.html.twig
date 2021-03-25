@@ -35,26 +35,27 @@
 
     footer{
         width: 100%;
-        margin-top: 36.4em;
+        margin-top: 37.4em;
         padding: 1em;
         color: white;
         background-color:rgb(0, 149, 213);
     }
 </style>
-
-<header>
-    <nav class="navbar">
-        <h1>Admin</h1>
-    </nav>
-</header>
-<div class="formulaire">
-    {{ form_start(formulaire) }}
-        {{ form_row(formulaire.titre) }}
-        {{ form_row(formulaire.logo) }}
-        <button type="submit" class="btn btn-primary" id="bouton">Envoyer</button>
-    {{ form_end(formulaire) }}
-    <button type="button" class="btn btn-primary"><a href="/read-all-competences" id="voirMessage">Voir mes compétences</a></button>
-</div>
-<footer>
-    &copy; 2021, Charly Delaize
-</footer>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>Admin</h1>
+        </nav>
+    </header>
+    <div class="formulaire">
+        {{ form_start(formulaire) }}
+            {{ form_row(formulaire.titre) }}
+            {{ form_row(formulaire.logo) }}
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        {{ form_end(formulaire) }}
+        <button type="button" class="btn btn-primary"><a href="/read-all-competences" id="voirMessage">Voir mes compétences</a></button>
+    </div>
+    <footer>
+        &copy; 2021, Charly Delaize
+    </footer>
+</body>
