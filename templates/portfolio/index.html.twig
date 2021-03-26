@@ -167,6 +167,16 @@
                 text-decoration: none;
             }
 
+            #fleche{
+                float: right;
+                margin-right: 3em;
+                font-size: 24px;
+                background-color: rgb(0, 149, 213);
+                color: white;
+                padding: 0.5em;
+                border-radius: 50%;
+            }
+
             /* FOOTER */
 
             footer{
@@ -184,12 +194,27 @@
                 color : white;
                 text-decoration: none;
             }
+
+            .whire{
+                float: right;
+                text-decoration: none;
+                color: rgb(0, 149, 213);
+                background-color: white;
+                width: 1.4%;
+                font-size: 19px;
+                font-weight: bold;
+                text-align: center;
+                border-radius: 10%;
+                margin-top: 0.05em;
+            }
         </style>
     </head>
 {% endblock %}
 {% block body %}
     <body>
-        <header>
+        <!-- HEADER -->
+        <header id="header">
+            <!-- Nav -->
             <nav class="navbar">
                 <div class="lien">
                     <a href="#propos">À Propos</a>
@@ -201,12 +226,15 @@
                 </div>
             </nav>
         </header>
+        <!-- MAIN -->
         <main>
             <h1>Charly Delaize</h1>
+            <!-- A propos -->
             <article class="propos" id="propos">
                 <h2>A propos de moi</h2>
                 <p>J'ai toujours été intéressé par l'informatique. J'ai eu un PC enfant et j'ai découvert cet univers, je me suis adapté aux évolutions (Windows 98, XP). Pendant mes études de graphisme, j'ai travaillé sur Mac.</p>
             </article>
+            <!-- Parcours -->
             <article class="parcours" id="parcours">
                 <h2>Parcours</h2>
                 <p>J'ai fait un BTS SIO (Service Informatique aux Organisations) et des études de graphisme, et après un stage informatique en réseau, je suis parti sur une formation de développeur.</p>
@@ -214,6 +242,7 @@
                 <p>J'ai commencé à réviser les langages HTML et CSS avant d'aller à la formation. J'ai trouvé cela intéressant. La formation se déroule bien et je fais partie des meilleurs de la classe. </p>
                 <button type="button" class="btn btn-primary" id="cv">Voir le CV</button>
             </article>
+            <!-- Compétences -->
             <article class="competences" id="competences">
                 <h2>Compétences</h2>
                 <img src="images/git.png" alt="git"> Git
@@ -242,13 +271,15 @@
                     <li><i class="fab fa-gitkraken"></i></li>
                 </ul> -->
             </article>
+            <!-- Portfolio -->
             <article id="portfolio">
                 <h2>Portfolio</h2>
-                <div class="boutique"></div>
-                <div class="crud"></div>
-                <div class="facture"></div>
-                <div class="sport"></div>
+                <a href="/read-projet/1"><div class="boutique"></div></a>
+                <a href="/read-projet/3"><div class="crud"></div></a>
+                <a href="/read-projet/4"><div class="facture"></div></a>
+                <div class="sport"><a href="/read-projet/5"></a></div>
             </article>
+            <!-- Contact -->
             <article class="contact">
                 <h2 id="contact">Contact</h2>
                 <div class="info">
@@ -266,8 +297,11 @@
                 </div>
             </article>
         </main>
+        <a href="#header"><i class="fas fa-arrow-up" id="fleche"></i></a>
+        <!-- FOOTER -->
         <footer>
             &copy; 2021, Charly Delaize
+            <a href="https://www.whire.me/@charlydelaize" target="_blank" class="whire">W</a>
             <a href="https://www.linkedin.com/in/charly-delaize-5a771580/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/CharlyDelaize" target="_blank"><i class="fab fa-github-square"></i></a>
         </footer>
