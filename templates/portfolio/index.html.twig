@@ -97,8 +97,8 @@
 
             /* Portfolio */
 
-            #portfolio .boutique{
-                margin-left: 40.5em;
+            #portfolio .boutique, #portfolio .companyName{
+                margin-left: 27.4em;
             }
 
             .boutique{
@@ -107,7 +107,16 @@
                 padding: 5vh;
                 background-image: url(images/boutique_icone.png);
                 background-repeat: no-repeat;
-                border: 1px solid skyblue;
+                margin: 2vh;
+                float: left;
+            }
+
+            .boutique2{
+                height: 8vh; /* viewport height */
+                width: 18vh;
+                padding: 5vh;
+                background-image: url(images/boutique2-icone.png);
+                background-repeat: no-repeat;
                 margin: 2vh;
                 float: left;
             }
@@ -118,7 +127,6 @@
                 padding: 5vh;
                 background-image: url(images/facture_icone.png);
                 background-repeat: no-repeat;
-                border: 1px solid skyblue;
                 margin: 2vh;
                 float: left;
             }
@@ -129,7 +137,46 @@
                 padding: 5vh;
                 background-image: url(images/articles_icone.png);
                 background-repeat: no-repeat;
-                border: 1px solid skyblue;
+                margin: 2vh;
+                float: left;
+            }
+
+            .sport{
+                height: 8vh; /* viewport height */
+                width: 18vh;
+                padding: 5vh;
+                background-image: url(images/sport-icone.jpg);
+                background-repeat: no-repeat;
+                margin: 2vh;
+                float: left;
+            }
+
+            .companyName{
+                height: 8vh; /* viewport height */
+                width: 18vh;
+                padding: 5vh;
+                background-image: url(images/company_name_icone.png);
+                background-repeat: no-repeat;
+                margin: 2vh;
+                float: left;
+            }
+
+            .leBilan{
+                height: 8vh; /* viewport height */
+                width: 18vh;
+                padding: 5vh;
+                background-image: url(images/le_bilan_icone.png);
+                background-repeat: no-repeat;
+                margin: 2vh;
+                float: left;
+            }
+
+            .voyage{
+                height: 8vh; /* viewport height */
+                width: 18vh;
+                padding: 5vh;
+                background-image: url(images/voyages-icone.png);
+                background-repeat: no-repeat;
                 margin: 2vh;
                 float: left;
             }
@@ -207,6 +254,10 @@
                 border-radius: 10%;
                 margin-top: 0.05em;
             }
+
+            .clear{
+                clear: both;
+            }
         </style>
     </head>
 {% endblock %}
@@ -275,9 +326,14 @@
             <article id="portfolio">
                 <h2>Portfolio</h2>
                 <a href="/read-projet/1"><div class="boutique"></div></a>
+                <a href="/read-projet/2"><div class="boutique2"></div></a>
                 <a href="/read-projet/3"><div class="crud"></div></a>
                 <a href="/read-projet/4"><div class="facture"></div></a>
-                <div class="sport"><a href="/read-projet/5"></a></div>
+                <a href="/read-projet/5"><div class="sport"></div></a>
+                <div class="clear"></div>
+                <a href="/read-projet/6"><div class="companyName"></div></a>
+                <a href="/read-projet/7"><div class="leBilan"></div></a>
+                <a href="/read-projet/8"><div class="voyage"></div></a>
             </article>
             <!-- Contact -->
             <article class="contact">
@@ -292,7 +348,6 @@
                         {{ form_row(formulaire.email) }}
                         {{ form_row(formulaire.message) }}
                         <button type="submit" class="btn btn-primary">Envoyer</button>
-                        <button type="button" class="btn btn-danger"><a href="/read-all" id="voirMessage">Voir les messages</a></button>
                     {{ form_end(formulaire) }}
                 </div>
             </article>

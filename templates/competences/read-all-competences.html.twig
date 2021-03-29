@@ -12,6 +12,13 @@ body{
     width: 100%;
 }
 
+nav a{
+    float: right;
+    color: white;
+    text-decoration: none;
+    margin-right: 3em;
+}
+
 h1{
     color: white;
     margin: 0 auto;
@@ -51,6 +58,7 @@ footer{
 <header>
     <nav class="navbar">
         <h1>Admin</h1>
+        <a href="logout">Déconnexion</a>
     </nav>
 </header>
 <table class="table-secondary">
@@ -72,7 +80,7 @@ footer{
         {% endfor %}
     </tbody>
 </table>
-<button type="button" class="btn btn-primary" id="bouton"><a href="competences" id="AjoutCompetences">Ajouter une compétences</a></button>
+<button type="button" class="btn btn-primary" id="bouton"><a href="competences" id="AjoutCompetences">Ajouter une compétence</a></button>
 <button type="button" class="btn btn-primary" id="bouton"><a href="read-all" id="AjoutCompetences">Voir les messages</a></button>
 <button type="button" class="btn btn-primary" id="bouton"><a href="read-all-projet" id="AjoutCompetences">Voir les projets</a></button>
 <footer>

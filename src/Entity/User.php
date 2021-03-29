@@ -12,12 +12,13 @@ use Symfony\Component\Security\Core\User\UserInterface;
  */
 class User implements UserInterface
 {
-    private $passwordEncoder;
+   // private $passwordEncoder;
 
-    public function __construct(UserPasswordEncoder $passwordEncoder)
+   /* public function __construct(UserPasswordEncoder $passwordEncoder)
     {
         $this->passwordEncoder = $passwordEncoder;
-    }
+    } */
+
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
@@ -97,7 +98,7 @@ class User implements UserInterface
 
     public function setPassword(string $password): self
     {
-        $this->password = $this->passwordEncoder->encodePassword($this, $password);
+        $this->password = $password;
         return $this;
     }
 
@@ -120,4 +121,24 @@ class User implements UserInterface
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
     }
+
+   /**
+    * Get the value of passwordEncoder
+    */ 
+   public function getPasswordEncoder()
+   {
+      return $this->passwordEncoder;
+   }
+
+   /**
+    * Set the value of passwordEncoder
+    *
+    * @return  self
+    */ 
+   public function setPasswordEncoder($passwordEncoder)
+   {
+      $this->passwordEncoder = $passwordEncoder;
+
+      return $this;
+   }
 }

@@ -15,6 +15,13 @@
         width: 100%;
     }
 
+    nav a{
+        float: right;
+        color: white;
+        text-decoration: none;
+        margin-right: 3em;
+    }
+
     h1{
         color: white;
         margin: 0 auto;
@@ -74,6 +81,7 @@
     <header>
         <nav class="navbar">
             <h1>Admin</h1>
+            <a href="logout">Déconnexion</a>
         </nav>
     </header>
     <table class="table-secondary">
@@ -101,9 +109,7 @@
     </table>
     <button type="submit" class="btn btn-primary" id="voirCompetences"><a href="/read-all-competences">Voir les competences</a></button>
     <button type="submit" class="btn btn-primary" id="retourAccueil"><a href="/read-all-projet">Voir les projets</a></button>
-    <button type="submit" class="btn btn-primary" id="retourAccueil"><a href="/">Retour à l'accueil</a></button>
     <footer>
         &copy; 2021, Charly Delaize
     </footer>
 {% endblock %}
-

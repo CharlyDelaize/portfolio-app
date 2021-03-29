@@ -12,7 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class ProjetController extends AbstractController
 {
     /**
-     * @Route("/projet", name="competences")
+     * @Route("/projet", name="projet")
      */
     public function new(Request $request): Response
     {
