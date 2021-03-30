@@ -24,7 +24,12 @@
 
     h1{
         color: white;
-        margin: 0 auto;
+    }
+
+    .mb-3{
+        color: white;
+        margin-left: 2em;
+        margin-top: 1em;
     }
     
     table{
@@ -51,7 +56,7 @@
 
     #voirCompetences{
         margin-top: 2em;
-        margin-left: 44.5em;
+        margin-left: 50em;
     }
 
     #retourAccueil a{
@@ -61,7 +66,7 @@
 
     footer{
         width: 100%;
-        margin-top: 33.5em;
+        margin-top: 33em;
         padding: 1em;
         color: white;
         background-color:rgb(0, 149, 213);
@@ -80,6 +85,11 @@
 {% block body %}
     <header>
         <nav class="navbar">
+            {% if app.user %}
+                <div class="mb-3">
+                    {{ app.user.username }}
+                </div>
+            {% endif %}
             <h1>Admin</h1>
             <a href="logout">Déconnexion</a>
         </nav>

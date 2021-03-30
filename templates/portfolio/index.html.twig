@@ -73,6 +73,11 @@
                 margin-left: 60em;
             }
 
+            #cv a{
+                color: white;
+                text-decoration: none;
+            }
+
             /* Compétences */
 
             .competences{
@@ -87,7 +92,16 @@
 
             .competences img{
                 margin-left: 5em;
-                width: 2%;
+                width: 10%;
+            }
+
+            th{
+                padding-left: 6em;
+            }
+
+            .voirCompetences{
+                color: black;
+                text-decoration: none;
             }
 
             .propos p, .parcours p, .competences p{
@@ -253,6 +267,11 @@
                 text-align: center;
                 border-radius: 10%;
                 margin-top: 0.05em;
+                transition: 0.5s;
+            }
+
+            .whire:hover{
+                color: rgb(0, 149, 213);
             }
 
             .clear{
@@ -273,6 +292,7 @@
                     <a href="#competences">Compétences</a>
                     <a href="#portfolio">Portfolio</a>
                     <a href="#contact">Contact</a>
+                    <a href="/inscription">Inscription</a>
                     <a href="/login">Connexion</a>
                 </div>
             </nav>
@@ -291,24 +311,43 @@
                 <p>J'ai fait un BTS SIO (Service Informatique aux Organisations) et des études de graphisme, et après un stage informatique en réseau, je suis parti sur une formation de développeur.</p>
                 <p>J'ai obtenu un stage en informatique qui s'est bien déroulé (collaborateurs bienveillants, bon environnement), où je préparais et configurais des ordinateurs neufs. A la suite de ce stage, ma tutrice m'a conseillé d'aller vers le développement.</p>
                 <p>J'ai commencé à réviser les langages HTML et CSS avant d'aller à la formation. J'ai trouvé cela intéressant. La formation se déroule bien et je fais partie des meilleurs de la classe. </p>
-                <button type="button" class="btn btn-primary" id="cv">Voir le CV</button>
+                <button type="button" class="btn btn-primary" id="cv"><a href="Charly_Delaize.pdf">Voir le CV</a></button>
             </article>
             <!-- Compétences -->
             <article class="competences" id="competences">
                 <h2>Compétences</h2>
-                <img src="images/git.png" alt="git"> Git
-                <img src="images/html.png" alt="html"> HTML
-                <img src="images/css.png" alt="css"> CSS
-                <img src="images/javascript.png" alt="javascript"> Javascript
-                <img src="images/wordpress.png" alt="wordpress"> Wordpress
-                <img src="images/bootstrap.png" alt="bootstrap"> Bootstrap
-                <img src="images/php.png" alt="php"> PHP
-                <img src="images/angular2.png" alt="angular"> Angular
-                <img src="images/ajax2.png" alt="ajax"> Ajax
-                <img src="images/symphony2.png" alt="symfony"> Symfony
-                <img src="images/gitkraken.png" alt="gitkraken"> Gitkraken
-                <img src="images/xampp.png" alt="xampp"> Xampp
-                <img src="images/visual_studio.png" alt="visual"> Visual Studio Code
+                <table>
+                    <tr>
+                        <th>Front</th>
+                        <th>Back</th>
+                        <th>Autres</th>
+                    </tr>
+                    <tr>
+                        <td><a href="read-competences/4" class="voirCompetences"><img src="images/html.png" alt="html"> HTML</a></td>
+                        <td><a href="read-competences/7" class="voirCompetences"><img src="images/php.png" alt="php"> PHP</a></td>
+                        <td><a href="read-competences/10" class="voirCompetences"><img src="images/git.png" alt="git"> Git</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="read-competences/5" class="voirCompetences"><img src="images/css.png" alt="css"> CSS</a></td>
+                        <td><a href="read-competences/9" class="voirCompetences"><img src="images/angular2.png" alt="angular"> Angular</a></td>
+                        <td><a href="read-competences/18" class="voirCompetences"><img src="images/visual_studio.png" alt="visual"> Visual Studio Code</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="read-competences/6" class="voirCompetences"><img src="images/javascript.png" alt="javascript"> Javascript</a></td>
+                        <td><a href="read-competences/11" class="voirCompetences"><img src="images/ajax2.png" alt="ajax"> Ajax</a></td>
+                        <td><a href="read-competences/19" class="voirCompetences"><img src="images/xampp.png" alt="xampp"> Xampp</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="read-competences/8" class="voirCompetences"><img src="images/wordpress.png" alt="wordpress"> Wordpress</a></td>
+                        <td><a href="read-competences/12" class="voirCompetences"><img src="images/symphony2.png" alt="symfony"> Symfony</a></td>
+                        <td><a href="read-competences/20" class="voirCompetences"><img src="images/gitkraken.png" alt="gitkraken"> Gitkraken</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="read-competences/21" class="voirCompetences"><img src="images/bootstrap.png" alt="bootstrap"> Bootstrap</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
                 <!-- <ul>
                     <li><i class="fab fa-git-alt"></i></li>
                     <li><i class="fab fa-html5"></i></li>

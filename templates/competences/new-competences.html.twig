@@ -1,68 +1,85 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-<style>
-    body{
-        background-color: rgb(234, 234, 234);
-        margin: 0 auto;
-    }
+{% extends 'base.html.twig' %}
 
-    .navbar{
-        background-color: rgb(0, 149, 213);
-        opacity: 0.8;
-        flex-direction: row-reverse;
-        position: fixed;
-        width: 100%
-    }
+{% block stylesheets %}
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: rgb(234, 234, 234);
+            margin: 0 auto;
+        }
 
-    nav a{
-        float: right;
-        color: white;
-        text-decoration: none;
-        margin-right: 3em;
-    }
+        .navbar{
+            background-color: rgb(0, 149, 213);
+            opacity: 0.8;
+            width: 100%;
+        }
 
-    h1{
-        color: white;
-        margin: 0 auto;
-    }
+        nav a{
+            float: right;
+            color: white;
+            text-decoration: none;
+            margin-right: 3em;
+        }
 
-    .formulaire{
-        padding-top: 6em;
-        width: 50%;
-        margin: 0 auto;
-    }
+        h1{
+            color: white;
+        }
 
-    #bouton{
-        margin-top: 1em;
-    }
+        .mb-3{
+            color: white;
+            margin-left: 2em;
+            margin-top: 1em;
+        }
 
-    #voirMessage{
-        color: white;
-        text-decoration: none;
-    }
+        .formulaire{
+            padding-top: 3em;
+            width: 50%;
+            margin: 0 auto;
+        }
 
-    footer{
-        width: 100%;
-        margin-top: 36.4em;
-        padding: 1em;
-        color: white;
-        background-color:rgb(0, 149, 213);
-    }
-</style>
+        button{
+            margin-top: 1em;
+        }
 
-<header>
-    <nav class="navbar">
-        <h1>Admin</h1>
-        <a href="logout">Déconnexion</a>
-    </nav>
-</header>
-<div class="formulaire">
-    {{ form_start(formulaire) }}
-        {{ form_row(formulaire.titre) }}
-        {{ form_row(formulaire.logo) }}
-        <button type="submit" class="btn btn-primary" id="bouton">Envoyer</button>
-    {{ form_end(formulaire) }}
-    <button type="button" class="btn btn-primary"><a href="/read-all-competences" id="voirMessage">Voir mes compétences</a></button>
-</div>
-<footer>
-    &copy; 2021, Charly Delaize
-</footer>
+        #voirMessage{
+            color: white;
+            text-decoration: none;
+        }
+
+        footer{
+            width: 100%;
+            margin-top: 34.9em;
+            padding: 1em;
+            color: white;
+            background-color:rgb(0, 149, 213);
+        }
+    </style>
+</head>
+{% endblock %}
+{% block body %}
+<body>
+    <header>
+        <nav class="navbar">
+            {% if app.user %}
+                <div class="mb-3">
+                    {{ app.user.username }}
+                </div>
+            {% endif %}
+            <h1>Admin</h1>
+            <a href="logout">Déconnexion</a>
+        </nav>
+    </header>
+    <div class="formulaire">
+        {{ form_start(formulaire) }}
+            {{ form_row(formulaire.titre) }}
+            {{ form_row(formulaire.logo) }}
+            <button type="submit" class="btn btn-primary" id="bouton">Envoyer</button>
+        {{ form_end(formulaire) }}
+        <button type="button" class="btn btn-primary"><a href="/read-all-competences" id="voirMessage">Voir mes compétences</a></button>
+    </div>
+    <footer>
+        &copy; 2021, Charly Delaize
+    </footer>
+</body>
+{% endblock %}

@@ -1,3 +1,5 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -29,7 +31,12 @@
 
         h1{
             color: white;
-            margin: 0 auto;
+        }
+
+        .mb-3{
+            color: white;
+            margin-left: 2em;
+            margin-top: 1em;
         }
 
         .formulaire{
@@ -52,7 +59,7 @@
 
         footer{
             width: 100%;
-            margin-top: 31.45em;
+            margin-top: 30.95em;
             padding: 1em;
             color: white;
             background-color: rgb(0, 149, 213);
@@ -67,10 +74,16 @@
         }
         </style>
     </head>
+    {% endblock %}
     {% block body %}
     <body>
         <header>
             <nav class="navbar">
+                {% if app.user %}
+                    <div class="mb-3">
+                        {{ app.user.username }}
+                    </div>
+                {% endif %}
                 <h1>Admin</h1>
                 <a href="logout">Déconnexion</a>
             </nav>
@@ -89,5 +102,5 @@
             &copy; 2021, Charly Delaize
         </footer>
     </body>
-    {% endblock %}
 </html>
+{% endblock %}
