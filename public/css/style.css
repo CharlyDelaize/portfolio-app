@@ -1,0 +1,1086 @@
+/* PORTABLE VERTICAL */
+@media (max-width: 479px){
+    body{
+        background-color: rgb(234, 234, 234);
+        margin: 0 auto;
+    }
+
+    /* HEADER */
+
+    .navbar{
+        background-color: rgb(0, 149, 213);
+        opacity: 0.8;
+        flex-direction: row-reverse;
+        position: fixed;
+        width: 100%
+    }
+
+    .navbar a{
+        float: right;
+        color: white;
+        text-decoration: none;
+        margin-left: 0.4em;
+        font-size: 13px;
+    }
+
+    .cache{
+        visibility: hidden;
+    }
+
+    /* MAIN */
+
+    h1{
+        padding: 4em;
+        width: 100%;
+    }
+
+    h1, h2{
+        text-align: center;
+    }
+
+    /* A propos */
+
+    .propos{
+        background-color: rgb(0, 100, 175);
+        color: white;
+        padding: 4em;
+        width: 100%;
+    }
+
+    .propos h2{
+        padding-bottom: 1em;
+    }
+
+    /* Parcours */
+
+    .parcours{
+        background-color: rgb(2, 66, 115);
+        color: white;
+        padding: 4em;
+        width: 100%;
+    }
+
+    .parcours h2{
+        padding-bottom: 1em;
+    }
+
+    #cv{
+        float: right;
+    }
+
+    #cv a{
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Compétences */
+
+    .competences{
+        width: 100%;
+        margin: 0 auto;
+        padding: 2em;
+    }
+
+    .competences h2{
+        padding-bottom: 1em;
+    }
+
+    .competences img{
+        width: 10%;
+    }
+
+    .voirCompetences{
+        color: black;
+        text-decoration: none;
+    }
+
+    .propos p, .parcours p, .competences p{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    /* Portfolio */
+
+    #portfolio{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .boutique{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/boutique_icone.png);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+        margin-left: 4em;
+    }
+
+    .boutique2{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/boutique2-icone.png);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+    }
+
+    .crud{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/facture_icone.png);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+        margin-left: 4em;
+    }
+
+    .facture{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/articles_icone.png);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+    }
+
+    .sport{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/sport-icone.jpg);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+        margin-left: 4em;
+    }
+
+    .companyName{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/company_name_icone.png);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+    }
+
+    .leBilan{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/le_bilan_icone.png);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+        margin-left: 4em;
+    }
+
+    .voyage{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/voyages-icone.png);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+    }
+
+    /* Contact */
+
+    .contact{
+        width: 100%;
+        margin: 0 auto;
+        padding: 5em;
+    }
+
+    .contact h2{
+        padding-bottom: 1em;
+    }
+
+    .info{
+        width: 100%;
+    }
+
+    .formulaire{
+        width: 100%;
+    }
+
+    .formulaire button{
+        margin-top: 1em;
+    }
+
+    #voirMessage{
+        color: white;
+        text-decoration: none;
+    }
+
+    #fleche{
+        float: right;
+        margin-right: 3em;
+        font-size: 24px;
+        background-color: rgb(0, 149, 213);
+        color: white;
+        padding: 0.5em;
+        border-radius: 50%;
+    }
+
+    /* FOOTER */
+
+    footer{
+        width: 100%;
+        margin-top: 5em;
+        padding: 1em;
+        color: white;
+        background-color:rgb(0, 149, 213);
+    }
+
+    footer i{
+        font-size: 30px;
+        float: right;
+        padding-right: 1em;
+        color : white;
+        text-decoration: none;
+    }
+
+    .whire{
+        float: right;
+        text-decoration: none;
+        color: rgb(0, 149, 213);
+        background-color: white;
+        width: 8%;
+        font-size: 19px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 10%;
+        margin-top: 0.05em;
+        transition: 0.5s;
+    }
+
+    .whire:hover{
+        color: rgb(0, 149, 213);
+    }
+
+    .clear{
+        clear: both;
+    }
+}
+
+/* PORTABLE HORIZONTAL & TABLETTE VERTICALES */
+
+@media (min-width: 480px ) and (max-width: 959px){
+    body{
+        background-color: rgb(234, 234, 234);
+        margin: 0 auto;
+    }
+
+    /* HEADER */
+
+    .navbar{
+        background-color: rgb(0, 149, 213);
+        opacity: 0.8;
+        flex-direction: row-reverse;
+        position: fixed;
+        width: 100%
+    }
+
+    .navbar a{
+        color: white;
+        text-decoration: none;
+        margin-right: 0.2em;
+        font-size: 13px;
+    }
+
+    /* MAIN */
+
+    h1{
+        padding: 4em;
+        width: 100%;
+    }
+
+    h1, h2{
+        text-align: center;
+    }
+
+    /* A propos */
+
+    .propos{
+        background-color: rgb(0, 100, 175);
+        color: white;
+        padding: 9em;
+        width: 100%;
+    }
+
+    .propos h2{
+        padding-bottom: 1em;
+    }
+
+    /* Parcours */
+
+    .parcours{
+        background-color: rgb(2, 66, 115);
+        color: white;
+        padding: 9em;
+        width: 100%;
+    }
+
+    .parcours h2{
+        padding-bottom: 1em;
+    }
+
+    #cv{
+        float: right;
+    }
+
+    #cv a{
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Compétences */
+
+    .competences{
+        width: 100%;
+        margin: 0 auto;
+        padding: 2em;
+    }
+
+    .competences h2{
+        padding-bottom: 1em;
+    }
+
+    .competences img{
+        margin-left: 5em;
+        width: 10%;
+    }
+
+    th{
+        padding-left: 6em;
+    }
+
+    .voirCompetences{
+        color: black;
+        text-decoration: none;
+    }
+
+    .propos p, .parcours p, .competences p{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    /* Portfolio */
+
+    #portfolio{
+        margin: 0 auto;
+        width: 88%;
+    }
+
+    .boutique{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/boutique_icone.png);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+    }
+
+    .boutique2{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/boutique2-icone.png);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+    }
+
+    .crud{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/facture_icone.png);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+    }
+
+    .facture{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/articles_icone.png);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+    }
+
+    .sport{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/sport-icone.jpg);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+    }
+
+    .companyName{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/company_name_icone.png);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+    }
+
+    .leBilan{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/le_bilan_icone.png);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+    }
+
+    .voyage{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/voyages-icone.png);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+    }
+
+    /* Contact */
+
+    .contact{
+        width: 100%;
+        margin: 0 auto;
+        padding: 5em;
+    }
+
+    .contact h2{
+        padding-bottom: 1em;
+    }
+
+    .info{
+        width: 60%;
+        margin-left: 9em;
+    }
+
+    .formulaire{
+        width: 60%;
+        margin-left: 9em;
+    }
+
+    .formulaire button{
+        margin-top: 1em;
+    }
+
+    #voirMessage{
+        color: white;
+        text-decoration: none;
+    }
+
+    #fleche{
+        float: right;
+        margin-right: 3em;
+        font-size: 24px;
+        background-color: rgb(0, 149, 213);
+        color: white;
+        padding: 0.5em;
+        border-radius: 50%;
+    }
+
+    /* FOOTER */
+
+    footer{
+        width: 100%;
+        margin-top: 13em;
+        padding: 1em;
+        color: white;
+        background-color:rgb(0, 149, 213);
+    }
+
+    footer i{
+        font-size: 30px;
+        float: right;
+        padding-right: 1em;
+        color : white;
+        text-decoration: none;
+    }
+
+    .whire{
+        float: right;
+        text-decoration: none;
+        color: rgb(0, 149, 213);
+        background-color: white;
+        width: 3%;
+        font-size: 19px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 10%;
+        margin-top: 0.05em;
+        transition: 0.5s;
+    }
+
+    .whire:hover{
+        color: rgb(0, 149, 213);
+    }
+
+    .clear{
+        clear: both;
+    }
+}
+
+/* TABLETTE HORIZONTALE & PETIT ECRAN */
+
+@media (min-width: 960px) and (max-width: 1280px){
+    body{
+        background-color: rgb(234, 234, 234);
+        margin: 0 auto;
+    }
+
+    /* HEADER */
+
+    .navbar{
+        background-color: rgb(0, 149, 213);
+        opacity: 0.8;
+        flex-direction: row-reverse;
+        position: fixed;
+        width: 100%
+    }
+
+    .navbar a{
+        color: white;
+        text-decoration: none;
+        margin-right: 1em;
+    }
+
+    /* MAIN */
+
+    h1{
+        padding: 8em;
+        width: 100%;
+    }
+
+    h1, h2{
+        text-align: center;
+    }
+
+    /* A propos */
+
+    .propos{
+        background-color: rgb(0, 100, 175);
+        color: white;
+        padding: 15em;
+    }
+
+    .propos h2{
+        padding-bottom: 1em;
+    }
+
+    /* Parcours */
+
+    .parcours{
+        background-color: rgb(2, 66, 115);
+        color: white;
+        padding: 15em;
+    }
+
+    .parcours h2{
+        padding-bottom: 1em;
+    }
+
+    #cv{
+        float: right;
+    }
+
+    #cv a{
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Compétences */
+
+    .competences{
+        width: 100%;
+        margin: 0 auto;
+        padding: 5em;
+    }
+
+    .competences h2{
+        padding-bottom: 1em;
+    }
+
+    .competences img{
+        margin-left: 5em;
+        width: 10%;
+    }
+
+    th{
+        padding-left: 6em;
+    }
+
+    .voirCompetences{
+        color: black;
+        text-decoration: none;
+    }
+
+    .propos p, .parcours p, .competences p{
+        margin: 0 auto;
+        text-align: justify;
+        width: 100%;
+    }
+
+    /* Portfolio */
+
+    #portfolio{
+        margin: 0 auto;
+        width: 68%;
+    }
+
+    .boutique{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/boutique_icone.png);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+    }
+
+    .boutique2{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/boutique2-icone.png);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+    }
+
+    .crud{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/facture_icone.png);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+    }
+
+    .facture{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/articles_icone.png);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+    }
+
+    .sport{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/sport-icone.jpg);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+    }
+
+    .companyName{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/company_name_icone.png);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+    }
+
+    .leBilan{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/le_bilan_icone.png);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+    }
+
+    .voyage{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/voyages-icone.png);
+        background-repeat: no-repeat;
+        margin: 1vh;
+        float: left;
+    }
+
+    /* Contact */
+
+    .contact{
+        width: 100%;
+        margin: 0 auto;
+        padding: 10em;
+    }
+
+    .contact h2{
+        padding-bottom: 1em;
+    }
+
+    .info{
+        float: left;
+        width: 40%;
+        margin-left: 5em;
+    }
+
+    .formulaire{
+        float: left;
+        width: 40%;
+        margin-left: 2em
+    }
+
+    .formulaire button{
+        margin-top: 1em;
+    }
+
+    #voirMessage{
+        color: white;
+        text-decoration: none;
+    }
+
+    #fleche{
+        float: right;
+        margin-right: 3em;
+        font-size: 24px;
+        background-color: rgb(0, 149, 213);
+        color: white;
+        padding: 0.5em;
+        border-radius: 50%;
+    }
+
+    /* FOOTER */
+
+    footer{
+        width: 100%;
+        margin-top: 13em;
+        padding: 1em;
+        color: white;
+        background-color:rgb(0, 149, 213);
+    }
+
+    footer i{
+        font-size: 30px;
+        float: right;
+        padding-right: 1em;
+        color : white;
+        text-decoration: none;
+    }
+
+    .whire{
+        float: right;
+        text-decoration: none;
+        color: rgb(0, 149, 213);
+        background-color: white;
+        width: 2.5%;
+        font-size: 19px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 10%;
+        margin-top: 0.05em;
+        transition: 0.5s;
+    }
+
+    .whire:hover{
+        color: rgb(0, 149, 213);
+    }
+
+    .clear{
+        clear: both;
+    }
+}
+
+/* GRAND ECRAN */
+
+@media (min-width: 1281px){
+    body{
+        background-color: rgb(234, 234, 234);
+        margin: 0 auto;
+    }
+
+    /* HEADER */
+
+    .navbar{
+        background-color: rgb(0, 149, 213);
+        opacity: 0.8;
+        flex-direction: row-reverse;
+        position: fixed;
+        width: 100%
+    }
+
+    .navbar a{
+        color: white;
+        text-decoration: none;
+        margin-right: 1em;
+    }
+
+    /* MAIN */
+
+    h1{
+        padding: 10em;
+    }
+
+    h1, h2{
+        text-align: center;
+    }
+
+    /* A propos */
+
+    .propos{
+        background-color: rgb(0, 100, 175);
+        color: white;
+        padding: 20em;
+    }
+
+    .propos h2{
+        padding-bottom: 1em;
+    }
+
+    /* Parcours */
+
+    .parcours{
+        background-color: rgb(2, 66, 115);
+        color: white;
+        padding: 20em;
+    }
+
+    .parcours h2{
+        padding-bottom: 1em;
+    }
+
+    #cv{
+        float: right;
+        margin-top: 1em;
+        margin-right: 10em;
+        width: 16%
+    }
+
+    #cv a{
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Compétences */
+
+    .competences{
+        width: 85%;
+        margin: 0 auto;
+        padding: 10em;
+    }
+
+    .competences h2{
+        padding-bottom: 1em;
+    }
+
+    .competences img{
+        margin-left: 5em;
+        width: 10%;
+    }
+
+    th{
+        padding-left: 6em;
+    }
+
+    .voirCompetences{
+        color: black;
+        text-decoration: none;
+    }
+
+    .propos p, .parcours p, .competences p{
+        margin: 0 auto;
+        width: 60%;
+        text-align: justify;
+    }
+
+    /* Portfolio */
+
+    #portfolio{
+        margin: 0 auto;
+        width: 56%;
+    }
+
+    .boutique{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/boutique_icone.png);
+        background-repeat: no-repeat;
+        margin: 2vh;
+        float: left;
+    }
+
+    .boutique2{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/boutique2-icone.png);
+        background-repeat: no-repeat;
+        margin: 2vh;
+        float: left;
+    }
+
+    .crud{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/facture_icone.png);
+        background-repeat: no-repeat;
+        margin: 2vh;
+        float: left;
+    }
+
+    .facture{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/articles_icone.png);
+        background-repeat: no-repeat;
+        margin: 2vh;
+        float: left;
+    }
+
+    .sport{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/sport-icone.jpg);
+        background-repeat: no-repeat;
+        margin: 2vh;
+        float: left;
+    }
+
+    .companyName{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/company_name_icone.png);
+        background-repeat: no-repeat;
+        margin: 2vh;
+        float: left;
+    }
+
+    .leBilan{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/le_bilan_icone.png);
+        background-repeat: no-repeat;
+        margin: 2vh;
+        float: left;
+    }
+
+    .voyage{
+        height: 8vh; /* viewport height */
+        width: 18vh;
+        padding: 5vh;
+        background-image: url(../images/voyages-icone.png);
+        background-repeat: no-repeat;
+        margin: 2vh;
+        float: left;
+    }
+
+    /* Contact */
+
+    .contact{
+        width: 70%;
+        margin: 0 auto;
+        padding: 10em;
+    }
+
+    .contact h2{
+        padding-bottom: 1em;
+    }
+
+    .info{
+        float: left;
+        width: 40%;
+        margin-left: 5em;
+    }
+
+    .formulaire{
+        float: left;
+        width: 40%;
+        margin-left: 2em
+    }
+
+    .formulaire button{
+        margin-top: 1em;
+    }
+
+    #voirMessage{
+        color: white;
+        text-decoration: none;
+    }
+
+    #fleche{
+        float: right;
+        margin-right: 3em;
+        font-size: 24px;
+        background-color: rgb(0, 149, 213);
+        color: white;
+        padding: 0.5em;
+        border-radius: 50%;
+    }
+
+    /* FOOTER */
+
+    footer{
+        width: 100%;
+        margin-top: 13em;
+        padding: 1em;
+        color: white;
+        background-color:rgb(0, 149, 213);
+    }
+
+    footer i{
+        font-size: 30px;
+        float: right;
+        padding-right: 1em;
+        color : white;
+        text-decoration: none;
+    }
+
+    .whire{
+        float: right;
+        text-decoration: none;
+        color: rgb(0, 149, 213);
+        background-color: white;
+        width: 1.8%;
+        font-size: 19px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 10%;
+        margin-top: 0.05em;
+        transition: 0.5s;
+    }
+
+    .whire:hover{
+        color: rgb(0, 149, 213);
+    }
+
+    .clear{
+        clear: both;
+    }
+}

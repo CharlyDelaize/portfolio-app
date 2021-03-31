@@ -13,271 +13,7 @@
         <!-- Lien Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <!-- Partie CSS -->
-        <style>
-            body{
-                background-color: rgb(234, 234, 234);
-                margin: 0 auto;
-            }
-
-            /* HEADER */
-
-            .navbar{
-                background-color: rgb(0, 149, 213);
-                opacity: 0.8;
-                flex-direction: row-reverse;
-                position: fixed;
-                width: 100%
-            }
-
-            .navbar a{
-                color: white;
-                text-decoration: none;
-                margin-right: 1em;
-            }
-
-            /* MAIN */
-
-            h1{
-                padding: 10em;
-            }
-
-            h1, h2{
-                text-align: center;
-            }
-
-            /* A propos */
-
-            .propos{
-                background-color: rgb(0, 100, 175);
-                color: white;
-                padding: 20em;
-            }
-
-            .propos h2{
-                padding-bottom: 1em;
-            }
-
-            /* Parcours */
-
-            .parcours{
-                background-color: rgb(2, 66, 115);
-                color: white;
-                padding: 20em;
-            }
-
-            .parcours h2{
-                padding-bottom: 1em;
-            }
-
-            #cv{
-                margin-left: 60em;
-            }
-
-            #cv a{
-                color: white;
-                text-decoration: none;
-            }
-
-            /* Compétences */
-
-            .competences{
-                width: 70%;
-                margin: 0 auto;
-                padding: 10em;
-            }
-
-            .competences h2{
-                padding-bottom: 1em;
-            }
-
-            .competences img{
-                margin-left: 5em;
-                width: 10%;
-            }
-
-            th{
-                padding-left: 6em;
-            }
-
-            .voirCompetences{
-                color: black;
-                text-decoration: none;
-            }
-
-            .propos p, .parcours p, .competences p{
-                margin: 0 auto;
-                width: 70%;
-            }
-
-            /* Portfolio */
-
-            #portfolio .boutique, #portfolio .companyName{
-                margin-left: 27.4em;
-            }
-
-            .boutique{
-                height: 8vh; /* viewport height */
-                width: 18vh;
-                padding: 5vh;
-                background-image: url(images/boutique_icone.png);
-                background-repeat: no-repeat;
-                margin: 2vh;
-                float: left;
-            }
-
-            .boutique2{
-                height: 8vh; /* viewport height */
-                width: 18vh;
-                padding: 5vh;
-                background-image: url(images/boutique2-icone.png);
-                background-repeat: no-repeat;
-                margin: 2vh;
-                float: left;
-            }
-
-            .crud{
-                height: 8vh; /* viewport height */
-                width: 18vh;
-                padding: 5vh;
-                background-image: url(images/facture_icone.png);
-                background-repeat: no-repeat;
-                margin: 2vh;
-                float: left;
-            }
-
-            .facture{
-                height: 8vh; /* viewport height */
-                width: 18vh;
-                padding: 5vh;
-                background-image: url(images/articles_icone.png);
-                background-repeat: no-repeat;
-                margin: 2vh;
-                float: left;
-            }
-
-            .sport{
-                height: 8vh; /* viewport height */
-                width: 18vh;
-                padding: 5vh;
-                background-image: url(images/sport-icone.jpg);
-                background-repeat: no-repeat;
-                margin: 2vh;
-                float: left;
-            }
-
-            .companyName{
-                height: 8vh; /* viewport height */
-                width: 18vh;
-                padding: 5vh;
-                background-image: url(images/company_name_icone.png);
-                background-repeat: no-repeat;
-                margin: 2vh;
-                float: left;
-            }
-
-            .leBilan{
-                height: 8vh; /* viewport height */
-                width: 18vh;
-                padding: 5vh;
-                background-image: url(images/le_bilan_icone.png);
-                background-repeat: no-repeat;
-                margin: 2vh;
-                float: left;
-            }
-
-            .voyage{
-                height: 8vh; /* viewport height */
-                width: 18vh;
-                padding: 5vh;
-                background-image: url(images/voyages-icone.png);
-                background-repeat: no-repeat;
-                margin: 2vh;
-                float: left;
-            }
-
-            /* Contact */
-
-            .contact{
-                width: 70%;
-                margin: 0 auto;
-                padding: 10em;
-            }
-
-            .contact h2{
-                padding-bottom: 1em;
-            }
-
-            .info{
-                float: left;
-                width: 40%;
-                margin-left: 5em;
-            }
-
-            .formulaire{
-                float: left;
-                width: 40%;
-                margin-left: 2em
-            }
-
-            .formulaire button{
-                margin-top: 1em;
-            }
-
-            #voirMessage{
-                color: white;
-                text-decoration: none;
-            }
-
-            #fleche{
-                float: right;
-                margin-right: 3em;
-                font-size: 24px;
-                background-color: rgb(0, 149, 213);
-                color: white;
-                padding: 0.5em;
-                border-radius: 50%;
-            }
-
-            /* FOOTER */
-
-            footer{
-                width: 100%;
-                margin-top: 13em;
-                padding: 1em;
-                color: white;
-                background-color:rgb(0, 149, 213);
-            }
-
-            footer i{
-                font-size: 30px;
-                float: right;
-                padding-right: 1em;
-                color : white;
-                text-decoration: none;
-            }
-
-            .whire{
-                float: right;
-                text-decoration: none;
-                color: rgb(0, 149, 213);
-                background-color: white;
-                width: 1.4%;
-                font-size: 19px;
-                font-weight: bold;
-                text-align: center;
-                border-radius: 10%;
-                margin-top: 0.05em;
-                transition: 0.5s;
-            }
-
-            .whire:hover{
-                color: rgb(0, 149, 213);
-            }
-
-            .clear{
-                clear: both;
-            }
-        </style>
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     </head>
 {% endblock %}
 {% block body %}
@@ -287,11 +23,11 @@
             <!-- Nav -->
             <nav class="navbar">
                 <div class="lien">
-                    <a href="#propos">À Propos</a>
-                    <a href="#parcours">Parcours</a>
-                    <a href="#competences">Compétences</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#propos" class="cache">À Propos</a>
+                    <a href="#parcours" class="cache">Parcours</a>
+                    <a href="#competences" class="cache">Compétences</a>
+                    <a href="#portfolio" class="cache">Portfolio</a>
+                    <a href="#contact" class="cache">Contact</a>
                     <a href="/inscription">Inscription</a>
                     <a href="/login">Connexion</a>
                 </div>
@@ -303,7 +39,7 @@
             <!-- A propos -->
             <article class="propos" id="propos">
                 <h2>A propos de moi</h2>
-                <p>J'ai toujours été intéressé par l'informatique. J'ai eu un PC enfant et j'ai découvert cet univers, je me suis adapté aux évolutions (Windows 98, XP). Pendant mes études de graphisme, j'ai travaillé sur Mac.</p>
+                <p>J'ai toujours été intéressé par l'informatique. J'ai eu un PC enfant et j'ai découvert cet univers, je me suis adapté aux évolutions (Windows 98, XP).</p>
             </article>
             <!-- Parcours -->
             <article class="parcours" id="parcours">
@@ -369,10 +105,10 @@
                 <a href="/read-projet/3"><div class="crud"></div></a>
                 <a href="/read-projet/4"><div class="facture"></div></a>
                 <a href="/read-projet/5"><div class="sport"></div></a>
-                <div class="clear"></div>
                 <a href="/read-projet/6"><div class="companyName"></div></a>
                 <a href="/read-projet/7"><div class="leBilan"></div></a>
                 <a href="/read-projet/8"><div class="voyage"></div></a>
+                <div class="clear"></div>
             </article>
             <!-- Contact -->
             <article class="contact">

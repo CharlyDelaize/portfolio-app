@@ -65,6 +65,8 @@
                 <div class="mb-3">
                     {{ app.user.username }}
                 </div>
+            {% else %}
+                <meta http-equiv="refresh" content="durée=0.1s;URL=login">
             {% endif %}
             <h1>Admin</h1>
             <a href="logout">Déconnexion</a>
@@ -74,6 +76,7 @@
         {{ form_start(formulaire) }}
             {{ form_row(formulaire.titre) }}
             {{ form_row(formulaire.logo) }}
+            {{ form_row(formulaire.niveau) }}
             <button type="submit" class="btn btn-primary" id="bouton">Envoyer</button>
         {{ form_end(formulaire) }}
         <button type="button" class="btn btn-primary"><a href="/read-all-competences" id="voirMessage">Voir mes compétences</a></button>

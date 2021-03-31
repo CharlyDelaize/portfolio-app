@@ -30,6 +30,13 @@ class Competences{
      */
     private $logo;
 
+    /**
+     * @Assert\NotBlank(message = "Veuillez entrer un nom")
+     * 
+     * @ORM\Column(type="string")
+     */
+    private $niveau;
+
     private $tableau;
 
     public function __construct()
@@ -113,6 +120,26 @@ class Competences{
     public function setTableau($tableau)
     {
         $this->tableau = $tableau;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of niveau
+     */ 
+    public function getNiveau()
+    {
+        return $this->niveau;
+    }
+
+    /**
+     * Set the value of niveau
+     *
+     * @return  self
+     */ 
+    public function setNiveau($niveau)
+    {
+        $this->niveau = $niveau;
 
         return $this;
     }

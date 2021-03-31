@@ -12,7 +12,8 @@ class CompetencesType extends AbstractType{
     {
         $builder
             ->add('titre')
-            ->add('logo');
+            ->add('logo')
+            ->add('niveau');
     }
 
     public function configureOptions(OptionsResolver $resolver)
