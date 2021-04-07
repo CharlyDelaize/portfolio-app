@@ -15,43 +15,49 @@
         color: white;
         text-decoration: none;
         margin-right: 3em;
+        font-size: 10px;
     }
 
     h1{
         color: white;
+    }
+
+    .mb-3{
+        color: white;
+        margin-left: 2em;
+        margin-top: 1em;
+        font-size: 10px;
+    }
+
+    table{
         margin: 0 auto;
+        margin-top: 1em;
     }
 
-    #error{
-        width:  50%
+    thead{
+        font-weight: bold;
     }
 
-    .login{
-        width: 75%;
-        margin: 0 auto;
-        margin-top: 2em;
-        margin-left: 5em;
+    td{
+        padding: 0.2em;
     }
 
-    form{
-        width: 73%;
-    }
-
-    button{
-        margin-top: 2em;
+    #bouton1, #bouton2, #bouton3{
         margin-left: 4em;
+        margin-top: 1em;
+    }
+
+    #AjoutCompetences{
+        color: white;
+        text-decoration: none;
     }
 
     footer{
         width: 100%;
-        margin-top: 5em;
+        margin-top: 9.95em;
         padding: 1em;
         color: white;
         background-color:rgb(0, 149, 213);
-    }
-
-    #inputEmail, #inputPassword{
-        width: 100%;
     }
 }
 
@@ -76,42 +82,45 @@
 
     h1{
         color: white;
+    }
+
+    .mb-3{
+        color: white;
+        margin-left: 2em;
+        margin-top: 1em;
+    }
+
+    table{
         margin: 0 auto;
+        margin-top: 1em;
     }
 
-    #error{
-        width:  50%
+    thead{
+        font-weight: bold;
     }
 
-    .login{
-        width: 50%;
-        margin: 0 auto;
-        margin-top: 2em;
-        margin-left: 19em;
+    td{
+        padding: 0.2em;
     }
 
-    form{
-        width: 73%;
+    #bouton1, #bouton2, #bouton3{
+        margin-left: 13em;
+        margin-top: 1em;
     }
 
-    button{
-        margin-top: 2em;
-        margin-left: 15.2em;
+    #AjoutCompetences{
+        color: white;
+        text-decoration: none;
     }
 
     footer{
         width: 100%;
-        margin-top: 33.5em;
+        margin-top: 9.95em;
         padding: 1em;
         color: white;
         background-color:rgb(0, 149, 213);
     }
-
-    #inputEmail, #inputPassword{
-        width: 100%;
-    }
 }
-
 
 @media (min-width: 960px) and (max-width: 1280px){
     body{
@@ -134,39 +143,43 @@
 
     h1{
         color: white;
+    }
+
+    .mb-3{
+        color: white;
+        margin-left: 2em;
+        margin-top: 1em;
+    }
+
+    table{
         margin: 0 auto;
+        margin-top: 1em;
     }
 
-    #error{
-        width:  50%
+    thead{
+        font-weight: bold;
     }
 
-    .login{
-        width: 50%;
-        margin: 0 auto;
-        margin-top: 2em;
-        margin-left: 25em;
+    td{
+        padding: 0.2em;
     }
 
-    form{
-        width: 73%;
+    #bouton1, #bouton2, #bouton3{
+        margin-left: 28em;
+        margin-top: 1em;
     }
 
-    button{
-        margin-top: 2em;
-        margin-left: 20em;
+    #AjoutCompetences{
+        color: white;
+        text-decoration: none;
     }
 
     footer{
         width: 100%;
-        margin-top: 33.5em;
+        margin-top: 9.95em;
         padding: 1em;
         color: white;
         background-color:rgb(0, 149, 213);
-    }
-
-    #inputEmail, #inputPassword{
-        width: 100%;
     }
 }
 
@@ -191,38 +204,42 @@
 
     h1{
         color: white;
+    }
+
+    .mb-3{
+        color: white;
+        margin-left: 2em;
+        margin-top: 1em;
+    }
+
+    table{
         margin: 0 auto;
+        margin-top: 1em;
     }
 
-    #error{
-        width:  50%
+    thead{
+        font-weight: bold;
     }
 
-    .login{
-        width: 50%;
-        margin: 0 auto;
-        margin-top: 2em;
-        margin-left: 38em;
+    td{
+        padding: 0.2em;
     }
 
-    form{
-        width: 73%;
+    #bouton1, #bouton2, #bouton3{
+        margin-left: 50em;
+        margin-top: 1em;
     }
 
-    button{
-        margin-top: 2em;
-        margin-left: 30.5em;
+    #AjoutCompetences{
+        color: white;
+        text-decoration: none;
     }
 
     footer{
         width: 100%;
-        margin-top: 33.5em;
+        margin-top: 9.95em;
         padding: 1em;
         color: white;
         background-color:rgb(0, 149, 213);
-    }
-
-    #inputEmail, #inputPassword{
-        width: 100%;
     }
 }

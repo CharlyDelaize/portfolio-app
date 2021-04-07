@@ -4,9 +4,7 @@
 {% block stylesheets %}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
-    <style>
 
-    </style>
 {% endblock %}
 {% block body %}
 <header>
@@ -18,12 +16,12 @@
     {% if error %}
         <div class="alert alert-danger" id="error">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
     {% endif %}
-
-    {% if app.user %}
+    
+    {# {% if app.user %}
         <div class="mb-3">
             You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
         </div>
-    {% endif %}
+    {% endif %} #}
     <div class="login">
         <h2 class="h3 mb-3 font-weight-normal">Veillez saisir votre addresse e-mail et votre mot de passe</h2>
         <label for="inputEmail">Email</label>
@@ -51,4 +49,37 @@
 <footer>
     &copy; 2021, Charly Delaize
 </footer>
+
+<script>
+ 
+$(document).ready(function(){
+ 
+    $("#submit").click(function(e){
+        e.preventDefault();
+ 
+        $.post(
+            '../ajax/login.php', // Un script PHP que l'on va créer juste après
+            {
+                username : $("#inputEmail").val(),  // Nous récupérons la valeur de nos input que l'on fait passer à connexion.php
+                password : $("#inputPassword").val()
+            },
+ 
+            function(data){
+ 
+                if(data == 'Success'){
+                     // Le membre est connecté. Ajoutons lui un message dans la page HTML.
+ 
+                     $("#resultat").html("<p>Vous avez été connecté avec succès !</p>");
+                }
+                else{
+                     // Le membre n'a pas été connecté. (data vaut ici "failed")
+ 
+                     $("#resultat").html("<p>Erreur lors de la connexion...</p>");
+                }
+         
+            },
+            'text'
+         );
+    });
+});
 {% endblock %}

@@ -1,0 +1,332 @@
+@media (max-width: 490px){
+    body{
+        background-color: rgb(234, 234, 234);
+        margin: 0 auto;
+    }
+    
+    .navbar{
+        background-color: rgb(0, 149, 213);
+        opacity: 0.8;
+        width: 100%;
+    }
+    
+    nav a{
+        float: right;
+        color: white;
+        text-decoration: none;
+        margin-right: 3em;
+        font-size: 10px;
+    }
+    
+    h1{
+        color: white;
+    }
+    
+    .mb-3{
+        color: white;
+        margin-left: 2em;
+        margin-top: 1em;
+        font-size: 10px;
+    }
+    
+    table{
+        margin: 0 auto;
+        margin-top: 2em;
+        width: 50%;
+    }
+    
+    table thead{
+        font-weight: bold;
+    }
+    
+    table td{
+        font-size: 10px;
+    }
+
+    table i{
+        font-size: 10px;
+        color: rgb(13, 110, 253)
+    }
+    
+    #retourAccueil{
+        margin-top: 2em;
+    }
+    
+    #voirCompetences a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    #voirCompetences{
+        margin-top: 2em;
+        margin-left: 0.5em;
+    }
+    
+    #retourAccueil a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    footer{
+        width: 100%;
+        margin-top: 10.9em;
+        padding: 1em;
+        color: white;
+        background-color:rgb(0, 149, 213);
+        font-size: 10px;
+    }
+    
+    footer i{
+        font-size: 30px;
+        float: right;
+        padding-right: 1em;
+        color : white;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 491px) and (max-width: 959px){
+    body{
+        background-color: rgb(234, 234, 234);
+        margin: 0 auto;
+    }
+    
+    .navbar{
+        background-color: rgb(0, 149, 213);
+        opacity: 0.8;
+        width: 100%;
+    }
+    
+    nav a{
+        float: right;
+        color: white;
+        text-decoration: none;
+        margin-right: 3em;
+    }
+    
+    h1{
+        color: white;
+    }
+    
+    .mb-3{
+        color: white;
+        margin-left: 2em;
+        margin-top: 1em;
+    }
+    
+    table{
+        margin: 0 auto;
+        margin-top: 2em;
+    }
+    
+    table thead{
+        font-weight: bold;
+    }
+    
+    table td{
+        padding: 0.2em;
+    }
+
+    table i{
+        color: rgb(13, 110, 253);
+    }
+    
+    #retourAccueil{
+        margin-top: 2em;
+    }
+    
+    #voirCompetences a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    #voirCompetences{
+        margin-top: 2em;
+        margin-left: 10em;
+    }
+    
+    #retourAccueil a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    footer{
+        width: 100%;
+        margin-top: 33em;
+        padding: 1em;
+        color: white;
+        background-color:rgb(0, 149, 213);
+    }
+    
+    footer i{
+        font-size: 30px;
+        float: right;
+        padding-right: 1em;
+        color : white;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1280px){
+    body{
+        background-color: rgb(234, 234, 234);
+        margin: 0 auto;
+    }
+    
+    .navbar{
+        background-color: rgb(0, 149, 213);
+        opacity: 0.8;
+        width: 100%;
+    }
+    
+    nav a{
+        float: right;
+        color: white;
+        text-decoration: none;
+        margin-right: 3em;
+    }
+    
+    h1{
+        color: white;
+    }
+    
+    .mb-3{
+        color: white;
+        margin-left: 2em;
+        margin-top: 1em;
+    }
+    
+    table{
+        margin: 0 auto;
+        margin-top: 2em;
+    }
+    
+    table thead{
+        font-weight: bold;
+    }
+    
+    table td{
+        padding: 0.2em;
+    }
+
+    table i{
+        color: rgb(13, 110, 253);
+    }
+    
+    #retourAccueil{
+        margin-top: 2em;
+    }
+    
+    #voirCompetences a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    #voirCompetences{
+        margin-top: 2em;
+        margin-left: 20em;
+    }
+    
+    #retourAccueil a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    footer{
+        width: 100%;
+        margin-top: 33em;
+        padding: 1em;
+        color: white;
+        background-color:rgb(0, 149, 213);
+    }
+    
+    footer i{
+        font-size: 30px;
+        float: right;
+        padding-right: 1em;
+        color : white;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 1281px){
+    body{
+        background-color: rgb(234, 234, 234);
+        margin: 0 auto;
+    }
+    
+    .navbar{
+        background-color: rgb(0, 149, 213);
+        opacity: 0.8;
+        width: 100%;
+    }
+    
+    nav a{
+        float: right;
+        color: white;
+        text-decoration: none;
+        margin-right: 3em;
+    }
+    
+    h1{
+        color: white;
+    }
+    
+    .mb-3{
+        color: white;
+        margin-left: 2em;
+        margin-top: 1em;
+    }
+    
+    table{
+        margin: 0 auto;
+        margin-top: 2em;
+    }
+    
+    table thead{
+        font-weight: bold;
+    }
+    
+    table td{
+        padding: 0.2em;
+    }
+
+    table i{
+        color: rgb(13, 110, 253);
+    }
+    
+    #retourAccueil{
+        margin-top: 2em;
+    }
+    
+    #voirCompetences a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    #voirCompetences{
+        margin-top: 2em;
+        margin-left: 45em;
+    }
+    
+    #retourAccueil a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    footer{
+        width: 100%;
+        margin-top: 33em;
+        padding: 1em;
+        color: white;
+        background-color:rgb(0, 149, 213);
+    }
+    
+    footer i{
+        font-size: 30px;
+        float: right;
+        padding-right: 1em;
+        color : white;
+        text-decoration: none;
+    }
+}

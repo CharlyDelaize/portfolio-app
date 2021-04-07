@@ -4,67 +4,7 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    
-    <style>
-        body{
-            background-color: rgb(234, 234, 234);
-            margin: 0 auto;
-        }
-
-        .navbar{
-            background-color: rgb(0, 149, 213);
-            opacity: 0.8;
-            width: 100%;
-        }
-
-        nav a{
-            float: right;
-            color: white;
-            text-decoration: none;
-            margin-right: 3em;
-        }
-
-        h1{
-            color: white;
-        }
-
-        .mb-3{
-            color: white;
-            margin-left: 2em;
-            margin-top: 1em;
-        }
-
-        table{
-            margin: 0 auto;
-            margin-top: 1em;
-        }
-
-        thead{
-            font-weight: bold;
-        }
-
-        td{
-            padding: 0.2em;
-        }
-
-        #bouton{
-            margin-left: 53.4em;
-            margin-top: 1em;
-        }
-
-        #AjoutCompetences{
-            color: white;
-            text-decoration: none;
-        }
-
-        footer{
-            width: 100%;
-            margin-top: 9.95em;
-            padding: 1em;
-            color: white;
-            background-color:rgb(0, 149, 213);
-        }
-    </style>
+    <link rel="stylesheet" href="{{ asset('css/read-all-competences.css') }}">
 </head>
 {% endblock %}
 {% block body %}
@@ -101,9 +41,9 @@
             {% endfor %}
         </tbody>
     </table>
-    <button type="button" class="btn btn-primary" id="bouton"><a href="competences" id="AjoutCompetences">Ajouter une compétence</a></button>
-    <button type="button" class="btn btn-primary" id="bouton"><a href="read-all" id="AjoutCompetences">Voir les messages</a></button>
-    <button type="button" class="btn btn-primary" id="bouton"><a href="read-all-projet" id="AjoutCompetences">Voir les projets</a></button>
+    <button type="button" class="btn btn-primary" id="bouton1"><a href="competences" id="AjoutCompetences">Ajouter une compétence</a></button><br>
+    <button type="button" class="btn btn-primary" id="bouton2"><a href="read-all" id="AjoutCompetences">Voir les messages</a></button><br>
+    <button type="button" class="btn btn-primary" id="bouton3"><a href="read-all-projet" id="AjoutCompetences">Voir les projets</a></button><br>
     <footer>
         &copy; 2021, Charly Delaize
     </footer>
