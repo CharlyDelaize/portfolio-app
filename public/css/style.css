@@ -1,5 +1,5 @@
 /* PORTABLE VERTICAL */
-@media (max-width: 479px){
+@media (max-width: 490px){
     body{
         background-color: rgb(234, 234, 234);
         margin: 0 auto;
@@ -85,8 +85,8 @@
         padding-bottom: 1em;
     }
 
-    .competences img{
-        width: 10%;
+    .langages{
+        margin-left: 5em;
     }
 
     .voirCompetences{
@@ -106,88 +106,8 @@
         width: 90%;
     }
 
-    .boutique{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/boutique_icone.png);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
-        margin-left: 4em;
-    }
-
-    .boutique2{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/boutique2-icone.png);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
-    }
-
-    .crud{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/facture_icone.png);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
-        margin-left: 4em;
-    }
-
-    .facture{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/articles_icone.png);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
-    }
-
-    .sport{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/sport-icone.jpg);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
-        margin-left: 4em;
-    }
-
-    .companyName{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/company_name_icone.png);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
-    }
-
-    .leBilan{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/le_bilan_icone.png);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
-        margin-left: 4em;
-    }
-
-    .voyage{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/voyages-icone.png);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
+    .projet{
+        margin-left: 2em;
     }
 
     /* Contact */
@@ -272,7 +192,7 @@
 
 /* PORTABLE HORIZONTAL & TABLETTE VERTICALES */
 
-@media (min-width: 480px ) and (max-width: 959px){
+@media (min-width: 491px ) and (max-width: 959px){
     body{
         background-color: rgb(234, 234, 234);
         margin: 0 auto;
@@ -353,13 +273,8 @@
         padding-bottom: 1em;
     }
 
-    .competences img{
-        margin-left: 5em;
-        width: 10%;
-    }
-
-    th{
-        padding-left: 6em;
+    .langages{
+        margin-left: 10em;
     }
 
     .voirCompetences{
@@ -377,86 +292,7 @@
     #portfolio{
         margin: 0 auto;
         width: 88%;
-    }
-
-    .boutique{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/boutique_icone.png);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
-    }
-
-    .boutique2{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/boutique2-icone.png);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
-    }
-
-    .crud{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/facture_icone.png);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
-    }
-
-    .facture{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/articles_icone.png);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
-    }
-
-    .sport{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/sport-icone.jpg);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
-    }
-
-    .companyName{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/company_name_icone.png);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
-    }
-
-    .leBilan{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/le_bilan_icone.png);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
-    }
-
-    .voyage{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/voyages-icone.png);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
+        margin-bottom: 30em;
     }
 
     /* Contact */
@@ -473,12 +309,12 @@
 
     .info{
         width: 60%;
-        margin-left: 9em;
+        margin-left: 6em;
     }
 
     .formulaire{
         width: 60%;
-        margin-left: 9em;
+        margin-left: 6em;
     }
 
     .formulaire button{
@@ -621,13 +457,8 @@
         padding-bottom: 1em;
     }
 
-    .competences img{
-        margin-left: 5em;
-        width: 10%;
-    }
-
-    th{
-        padding-left: 6em;
+    .langages{
+        margin-left: 25em;
     }
 
     .voirCompetences{
@@ -646,86 +477,7 @@
     #portfolio{
         margin: 0 auto;
         width: 68%;
-    }
-
-    .boutique{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/boutique_icone.png);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
-    }
-
-    .boutique2{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/boutique2-icone.png);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
-    }
-
-    .crud{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/facture_icone.png);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
-    }
-
-    .facture{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/articles_icone.png);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
-    }
-
-    .sport{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/sport-icone.jpg);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
-    }
-
-    .companyName{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/company_name_icone.png);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
-    }
-
-    .leBilan{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/le_bilan_icone.png);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
-    }
-
-    .voyage{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/voyages-icone.png);
-        background-repeat: no-repeat;
-        margin: 1vh;
-        float: left;
+        margin-bottom: 13em;
     }
 
     /* Contact */
@@ -894,13 +646,8 @@
         padding-bottom: 1em;
     }
 
-    .competences img{
-        margin-left: 5em;
-        width: 10%;
-    }
-
-    th{
-        padding-left: 6em;
+    .langages{
+        margin-left: 25em;
     }
 
     .voirCompetences{
@@ -919,86 +666,7 @@
     #portfolio{
         margin: 0 auto;
         width: 56%;
-    }
-
-    .boutique{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/boutique_icone.png);
-        background-repeat: no-repeat;
-        margin: 2vh;
-        float: left;
-    }
-
-    .boutique2{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/boutique2-icone.png);
-        background-repeat: no-repeat;
-        margin: 2vh;
-        float: left;
-    }
-
-    .crud{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/facture_icone.png);
-        background-repeat: no-repeat;
-        margin: 2vh;
-        float: left;
-    }
-
-    .facture{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/articles_icone.png);
-        background-repeat: no-repeat;
-        margin: 2vh;
-        float: left;
-    }
-
-    .sport{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/sport-icone.jpg);
-        background-repeat: no-repeat;
-        margin: 2vh;
-        float: left;
-    }
-
-    .companyName{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/company_name_icone.png);
-        background-repeat: no-repeat;
-        margin: 2vh;
-        float: left;
-    }
-
-    .leBilan{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/le_bilan_icone.png);
-        background-repeat: no-repeat;
-        margin: 2vh;
-        float: left;
-    }
-
-    .voyage{
-        height: 8vh; /* viewport height */
-        width: 18vh;
-        padding: 5vh;
-        background-image: url(../images/voyages-icone.png);
-        background-repeat: no-repeat;
-        margin: 2vh;
-        float: left;
+        margin-bottom: 13em;
     }
 
     /* Contact */

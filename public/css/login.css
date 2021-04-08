@@ -87,7 +87,7 @@
         width: 50%;
         margin: 0 auto;
         margin-top: 2em;
-        margin-left: 19em;
+        margin-left: 10em;
     }
 
     form{
@@ -96,7 +96,7 @@
 
     button{
         margin-top: 2em;
-        margin-left: 15.2em;
+        margin-left: 10em;
     }
 
     footer{
@@ -142,19 +142,19 @@
     }
 
     .login{
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
         margin-top: 2em;
-        margin-left: 25em;
+        margin-left: 5em;
     }
 
     form{
-        width: 73%;
+        width: 100%;
     }
 
     button{
         margin-top: 2em;
-        margin-left: 20em;
+        margin-left: 22em;
     }
 
     footer{
@@ -199,19 +199,19 @@
     }
 
     .login{
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
         margin-top: 2em;
-        margin-left: 38em;
+        margin-left: 25em;
     }
 
     form{
-        width: 73%;
+        width: 85%;
     }
 
     button{
         margin-top: 2em;
-        margin-left: 30.5em;
+        margin-left: 42.5em;
     }
 
     footer{

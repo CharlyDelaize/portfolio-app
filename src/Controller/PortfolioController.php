@@ -2,7 +2,9 @@
 
 namespace App\Controller;
 
+use App\Entity\Competences;
 use App\Entity\Portfolio;
+use App\Entity\Projet;
 use App\Form\PortfolioType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -29,8 +31,16 @@ class PortfolioController extends AbstractController
             $em->flush();
         }
 
+        $repository = $this->getDoctrine()->getRepository(Competences::class);
+        $competences = $repository->findAll();
+
+        $repo = $this->getDoctrine()->getRepository(Projet::class);
+        $projet = $repo->findAll();
+
         return $this->render('portfolio/index.html.twig', [
-            'formulaire' => $form->createView()
+            'formulaire' => $form->createView(),
+            'lists' => $competences,
+            'images' => $projet
         ]);
     }
 

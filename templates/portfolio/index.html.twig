@@ -52,7 +52,7 @@
             <!-- Compétences -->
             <article class="competences" id="competences">
                 <h2>Compétences</h2>
-                <table>
+                {# <table>
                     <tr>
                         <th>Front</th>
                         <th>Back</th>
@@ -83,7 +83,16 @@
                         <td></td>
                         <td></td>
                     </tr>
-                </table>
+                </table> #}
+                {% for competences in lists %}
+                    <table class="langages">
+                        <tr>
+                            <td>
+                                <a href="read-competences/{{competences.id}}" class="voirCompetences"><img src="{{ competences.logo }}" alt="logo" style="width:30px"> {{ competences.titre }}</a>
+                            </td>
+                        </tr>
+                    </table>
+                {% endfor %}
                 <!-- <ul>
                     <li><i class="fab fa-git-alt"></i></li>
                     <li><i class="fab fa-html5"></i></li>
@@ -100,7 +109,7 @@
             <!-- Portfolio -->
             <article id="portfolio">
                 <h2>Portfolio</h2>
-                <a href="/read-projet/1"><div class="boutique"></div></a>
+                {# <a href="/read-projet/1"><div class="boutique"></div></a>
                 <a href="/read-projet/2"><div class="boutique2"></div></a>
                 <a href="/read-projet/3"><div class="crud"></div></a>
                 <a href="/read-projet/4"><div class="facture"></div></a>
@@ -108,7 +117,16 @@
                 <a href="/read-projet/6"><div class="companyName"></div></a>
                 <a href="/read-projet/7"><div class="leBilan"></div></a>
                 <a href="/read-projet/8"><div class="voyage"></div></a>
-                <div class="clear"></div>
+                <div class="clear"></div> #}
+                
+                    {% for projet in images %}
+                    <article class="projet">
+                        <table>
+                            <a href="read-projet/{{projet.id}}" class="voirProjet"><img src="{{ projet.image }}" alt="logo" style="width:18vh; height:13vh; float:left; margin:1em;"></a>
+                        </table>
+                    </article>
+                    {% endfor %}
+                
             </article>
             <!-- Contact -->
             <article class="contact">
