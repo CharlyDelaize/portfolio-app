@@ -1,7 +1,10 @@
 /* PORTABLE VERTICAL */
 @media (max-width: 490px){
     body{
-        background-color: rgb(234, 234, 234);
+        background-image: url("../images/fond-accueil4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
         margin: 0 auto;
     }
 
@@ -31,6 +34,8 @@
 
     h1{
         padding: 4em;
+        color : maroon;
+        font-weight: bold;
         width: 100%;
     }
 
@@ -194,7 +199,10 @@
 
 @media (min-width: 491px ) and (max-width: 959px){
     body{
-        background-color: rgb(234, 234, 234);
+        background-image: url("../images/fond-accueil3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
         margin: 0 auto;
     }
 
@@ -219,6 +227,8 @@
 
     h1{
         padding: 4em;
+        color : maroon;
+        font-weight: bold;
         width: 100%;
     }
 
@@ -381,8 +391,12 @@
 
 @media (min-width: 960px) and (max-width: 1280px){
     body{
-        background-color: rgb(234, 234, 234);
+        background-image: url("../images/fond-accueil2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
         margin: 0 auto;
+        width: 1280px;
     }
 
     /* HEADER */
@@ -405,6 +419,8 @@
 
     h1{
         padding: 8em;
+        color : maroon;
+        font-weight: bold;
         width: 100%;
     }
 
@@ -568,7 +584,10 @@
 
 @media (min-width: 1281px){
     body{
-        background-color: rgb(234, 234, 234);
+        background-image: url("../images/fond-accueil1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
         margin: 0 auto;
     }
 
@@ -592,17 +611,20 @@
 
     h1{
         padding: 10em;
+        color : maroon;
+        font-weight: bold;
+        font-size: 48px;
     }
 
     h1, h2{
         text-align: center;
+        color : maroon;
     }
 
     /* A propos */
 
     .propos{
-        background-color: rgb(0, 100, 175);
-        color: white;
+        color : maroon;
         padding: 20em;
     }
 
@@ -613,8 +635,7 @@
     /* Parcours */
 
     .parcours{
-        background-color: rgb(2, 66, 115);
-        color: white;
+        color : maroon;
         padding: 20em;
     }
 
@@ -630,7 +651,7 @@
     }
 
     #cv a{
-        color: white;
+        color : maroon;
         text-decoration: none;
     }
 
@@ -651,7 +672,7 @@
     }
 
     .voirCompetences{
-        color: black;
+        color: maroon;
         text-decoration: none;
     }
 
@@ -666,7 +687,8 @@
     #portfolio{
         margin: 0 auto;
         width: 56%;
-        margin-bottom: 13em;
+        padding-top: 13em;
+        margin-bottom: 26em;
     }
 
     /* Contact */
@@ -675,6 +697,7 @@
         width: 70%;
         margin: 0 auto;
         padding: 10em;
+        margin-bottom: 13em;
     }
 
     .contact h2{
@@ -685,6 +708,7 @@
         float: left;
         width: 40%;
         margin-left: 5em;
+        color: maroon;
     }
 
     .formulaire{
@@ -698,7 +722,7 @@
     }
 
     #voirMessage{
-        color: white;
+        color : maroon;
         text-decoration: none;
     }
 
