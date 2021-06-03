@@ -1,7 +1,11 @@
 @media (max-width: 490px){
     body{
-        background-color: rgb(234, 234, 234);
+        background-image: url("../images/fond-accueil4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
         margin: 0 auto;
+        color: maroon;
     }
     
     .navbar{
@@ -45,11 +49,13 @@
 
     table i{
         font-size: 10px;
-        color: rgb(13, 110, 253)
+        color: maroon
     }
     
     #retourAccueil{
         margin-top: 2em;
+        background-color: maroon;
+        border: none;
     }
     
     #voirCompetences a{
@@ -60,6 +66,8 @@
     #voirCompetences{
         margin-top: 2em;
         margin-left: 0.5em;
+        background-color: maroon;
+        border: none;
     }
     
     #retourAccueil a{
@@ -87,8 +95,12 @@
 
 @media (min-width: 491px) and (max-width: 959px){
     body{
-        background-color: rgb(234, 234, 234);
+        background-image: url("../images/fond-accueil3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
         margin: 0 auto;
+        color: maroon;
     }
     
     .navbar{
@@ -128,11 +140,13 @@
     }
 
     table i{
-        color: rgb(13, 110, 253);
+        color: maroon;
     }
     
     #retourAccueil{
         margin-top: 2em;
+        background-color: maroon;
+        border: none;
     }
     
     #voirCompetences a{
@@ -143,6 +157,8 @@
     #voirCompetences{
         margin-top: 2em;
         margin-left: 10em;
+        background-color: maroon;
+        border: none;
     }
     
     #retourAccueil a{
@@ -169,8 +185,12 @@
 
 @media (min-width: 960px) and (max-width: 1280px){
     body{
-        background-color: rgb(234, 234, 234);
+        background-image: url("../images/fond-accueil2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
         margin: 0 auto;
+        color: maroon;
     }
     
     .navbar{
@@ -210,11 +230,13 @@
     }
 
     table i{
-        color: rgb(13, 110, 253);
+        color: maroon;
     }
     
     #retourAccueil{
         margin-top: 2em;
+        background-color: maroon;
+        border: none;
     }
     
     #voirCompetences a{
@@ -225,6 +247,8 @@
     #voirCompetences{
         margin-top: 2em;
         margin-left: 20em;
+        background-color: maroon;
+        border: none;
     }
     
     #retourAccueil a{
@@ -251,8 +275,12 @@
 
 @media (min-width: 1281px){
     body{
-        background-color: rgb(234, 234, 234);
+        background-image: url("../images/fond-accueil1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
         margin: 0 auto;
+        color: maroon;
     }
     
     .navbar{
@@ -281,6 +309,7 @@
     table{
         margin: 0 auto;
         margin-top: 2em;
+        background-color: rgba(255, 255, 255, 0.5);
     }
     
     table thead{
@@ -292,11 +321,13 @@
     }
 
     table i{
-        color: rgb(13, 110, 253);
+        color: maroon;
     }
     
     #retourAccueil{
         margin-top: 2em;
+        background-color: maroon;
+        border: none;
     }
     
     #voirCompetences a{
@@ -307,6 +338,8 @@
     #voirCompetences{
         margin-top: 2em;
         margin-left: 45em;
+        background-color: maroon;
+        border: none;
     }
     
     #retourAccueil a{

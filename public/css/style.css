@@ -32,11 +32,17 @@
 
     /* MAIN */
 
+    .image{
+        padding-top: 15em;
+        padding-bottom: 8em;
+    }
+
     h1{
-        padding: 4em;
         color : maroon;
+        background-color: rgba(255, 255, 255, 0.5);
         font-weight: bold;
-        width: 100%;
+        width: 70%;
+        margin: 0 auto;
     }
 
     h1, h2{
@@ -45,11 +51,17 @@
 
     /* A propos */
 
+    #propos{
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+
     .propos{
-        background-color: rgb(0, 100, 175);
-        color: white;
-        padding: 4em;
-        width: 100%;
+        color: maroon;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 1em;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .propos h2{
@@ -57,12 +69,17 @@
     }
 
     /* Parcours */
+    #parcours{
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
 
     .parcours{
-        background-color: rgb(2, 66, 115);
-        color: white;
-        padding: 4em;
-        width: 100%;
+        color: maroon;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 1em;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .parcours h2{
@@ -70,7 +87,10 @@
     }
 
     #cv{
-        float: right;
+        margin-left: 5em;
+        margin-top: 1em;
+        background-color: maroon;
+        border: none;
     }
 
     #cv a{
@@ -81,7 +101,9 @@
     /* Compétences */
 
     .competences{
-        width: 100%;
+        color: maroon;
+        background-color: rgba(255, 255, 255, 0.6);
+        width: 90%;
         margin: 0 auto;
         padding: 2em;
     }
@@ -91,7 +113,7 @@
     }
 
     .langages{
-        margin-left: 5em;
+        margin-left: 0.5em;
     }
 
     .voirCompetences{
@@ -109,6 +131,8 @@
     #portfolio{
         margin: 0 auto;
         width: 90%;
+        color: maroon;
+        background-color: rgba(255, 255, 255, 0.6);
     }
 
     .projet{
@@ -118,9 +142,11 @@
     /* Contact */
 
     .contact{
-        width: 100%;
+        color: maroon;
+        background-color: rgba(255, 255, 255, 0.6);
+        width: 90%;
         margin: 0 auto;
-        padding: 5em;
+        padding: 1em;
     }
 
     .contact h2{
@@ -225,11 +251,18 @@
 
     /* MAIN */
 
+    .image{
+        padding-top: 20em;
+        padding-bottom: 20em;
+    }
+
     h1{
-        padding: 4em;
+        padding: 0.5em;
         color : maroon;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.5);
         font-weight: bold;
-        width: 100%;
+        width: 50%;
     }
 
     h1, h2{
@@ -238,11 +271,17 @@
 
     /* A propos */
 
+    #propos{
+        padding-top: 15em;
+        padding-bottom: 15em;
+    }
+
     .propos{
-        background-color: rgb(0, 100, 175);
-        color: white;
-        padding: 9em;
-        width: 100%;
+        color: maroon;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 1em;
+        width: 50%;
+        margin: 0 auto;
     }
 
     .propos h2{
@@ -251,11 +290,17 @@
 
     /* Parcours */
 
+    #parcours{
+        padding-top: 25em;
+        padding-bottom: 25em;
+    }
+
     .parcours{
-        background-color: rgb(2, 66, 115);
-        color: white;
-        padding: 9em;
-        width: 100%;
+        color: maroon;
+        padding: 1em;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 50%;
+        margin: 0 auto;
     }
 
     .parcours h2{
@@ -263,7 +308,9 @@
     }
 
     #cv{
-        float: right;
+        margin-left: 10.5em;
+        background-color: maroon;
+        border:none;
     }
 
     #cv a{
@@ -273,8 +320,15 @@
 
     /* Compétences */
 
+    #competences{
+        padding-top: 25em;
+        padding-bottom: 25em;
+    }
+
     .competences{
-        width: 100%;
+        width: 60%;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: maroon;
         margin: 0 auto;
         padding: 2em;
     }
@@ -300,17 +354,20 @@
     /* Portfolio */
 
     #portfolio{
+        color: maroon;
         margin: 0 auto;
-        width: 88%;
+        width: 65%;
         margin-bottom: 30em;
     }
 
     /* Contact */
 
     .contact{
-        width: 100%;
+        width: 60%;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: maroon;
         margin: 0 auto;
-        padding: 5em;
+        padding: 1em;
     }
 
     .contact h2{
@@ -396,7 +453,6 @@
         background-size: cover;
         background-attachment: fixed;
         margin: 0 auto;
-        width: 1280px;
     }
 
     /* HEADER */
@@ -417,11 +473,18 @@
 
     /* MAIN */
 
+    .image{
+        padding-top: 25em;
+        padding-bottom: 25em;
+    }
+
     h1{
-        padding: 8em;
         color : maroon;
         font-weight: bold;
-        width: 100%;
+        font-size: 36px;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 25%;
+        margin: 0 auto;
     }
 
     h1, h2{
@@ -430,10 +493,15 @@
 
     /* A propos */
 
+    #propos{
+        padding-top: 0.1em;
+    }
+
     .propos{
-        background-color: rgb(0, 100, 175);
-        color: white;
-        padding: 15em;
+        color : maroon;
+        margin: 20em;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 1em;
     }
 
     .propos h2{
@@ -442,18 +510,21 @@
 
     /* Parcours */
 
+    #parcours{
+        padding-top: 0.1em;
+    }
+
     .parcours{
-        background-color: rgb(2, 66, 115);
-        color: white;
-        padding: 15em;
+        color : maroon;
+        margin: 20em;
+        margin-top: 17em;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 1em;
+        width: 50%;
     }
 
     .parcours h2{
         padding-bottom: 1em;
-    }
-
-    #cv{
-        float: right;
     }
 
     #cv a{
@@ -461,10 +532,24 @@
         text-decoration: none;
     }
 
+    #cv{
+        margin-left: 14.2em;
+        width: 20%;
+        background-color: maroon;
+        border: none;
+    }
+
     /* Compétences */
 
+    #competences{
+        padding-top: 17em;
+        padding-bottom: 45em;
+    }
+
     .competences{
-        width: 100%;
+        width: 85%;
+        color: maroon;
+        background-color: rgba(255, 255, 255, 0.6);
         margin: 0 auto;
         padding: 5em;
     }
@@ -497,11 +582,15 @@
     }
 
     /* Contact */
+    #contact{
+        margin-top: 30em;
+    }
 
     .contact{
-        width: 100%;
+        width: 80%;
         margin: 0 auto;
-        padding: 10em;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding-bottom: 25em;
     }
 
     .contact h2{
@@ -609,11 +698,18 @@
 
     /* MAIN */
 
+    .image{
+        padding-top: 30em;
+        padding-bottom: 30em;
+    }
+
     h1{
-        padding: 10em;
         color : maroon;
         font-weight: bold;
         font-size: 48px;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 30%;
+        margin: 0 auto;
     }
 
     h1, h2{
@@ -623,9 +719,16 @@
 
     /* A propos */
 
+    #propos{
+        padding-top: 0.1em;
+    }
+
     .propos{
         color : maroon;
-        padding: 20em;
+        margin: 30em;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 1em;
+        width: 50%;
     }
 
     .propos h2{
@@ -634,9 +737,17 @@
 
     /* Parcours */
 
+    #parcours{
+        padding-top: 0.1em;
+    }
+
     .parcours{
         color : maroon;
-        padding: 20em;
+        margin: 30em;
+        margin-top: 22em;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 1em;
+        width: 50%;
     }
 
     .parcours h2{
@@ -644,23 +755,29 @@
     }
 
     #cv{
-        float: right;
-        margin-top: 1em;
-        margin-right: 10em;
-        width: 16%
+        margin-left: 24em;
+        width: 16%;
+        background-color: maroon;
+        border: none;
     }
 
     #cv a{
-        color : maroon;
         text-decoration: none;
     }
 
     /* Compétences */
 
+    #competences{
+        padding-top: 17em;
+        padding-bottom: 45em;
+    }
+
     .competences{
+        background-color: rgba(255, 255, 255, 0.6);
         width: 85%;
+        padding: 1em;
+        margin-top: 22em;
         margin: 0 auto;
-        padding: 10em;
     }
 
     .competences h2{
@@ -686,18 +803,22 @@
 
     #portfolio{
         margin: 0 auto;
-        width: 56%;
+        width: 43%;
         padding-top: 13em;
         margin-bottom: 26em;
     }
 
     /* Contact */
 
+    #contact{
+        margin-top: 40em;
+    }
+
     .contact{
         width: 70%;
         margin: 0 auto;
-        padding: 10em;
-        margin-bottom: 13em;
+        padding-bottom: 25em;
+        background-color: rgba(255, 255, 255, 0.6);
     }
 
     .contact h2{
@@ -719,6 +840,8 @@
 
     .formulaire button{
         margin-top: 1em;
+        background-color: maroon;
+        border: none;
     }
 
     #voirMessage{

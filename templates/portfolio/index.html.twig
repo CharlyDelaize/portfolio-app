@@ -39,74 +39,80 @@
             <h1>Charly Delaize</h1>
         </article>
             <!-- A propos -->
-            <article class="propos" id="propos">
-                <h2>A propos de moi</h2>
-                <p>J'ai toujours été intéressé par l'informatique. J'ai eu un PC enfant et j'ai découvert cet univers, je me suis adapté aux évolutions (Windows 98, XP).</p>
+            <article id="propos">
+                <div class="propos">
+                    <h2>A propos de moi</h2>
+                    <p>J'ai toujours été intéressé par l'informatique. J'ai eu un PC enfant et j'ai découvert cet univers, je me suis adapté aux évolutions (Windows 98, XP).</p>
+                </div>
             </article>
             <!-- Parcours -->
-            <article class="parcours" id="parcours">
-                <h2>Parcours</h2>
-                <p>J'ai fait un BTS SIO (Service Informatique aux Organisations) et des études de graphisme, et après un stage informatique en réseau, je suis parti sur une formation de développeur.</p>
-                <p>J'ai obtenu un stage en informatique qui s'est bien déroulé (collaborateurs bienveillants, bon environnement), où je préparais et configurais des ordinateurs neufs. A la suite de ce stage, ma tutrice m'a conseillé d'aller vers le développement.</p>
-                <p>J'ai commencé à réviser les langages HTML et CSS avant d'aller à la formation. J'ai trouvé cela intéressant. La formation se déroule bien et je fais partie des meilleurs de la classe. </p>
-                <a href="Charly_Delaize.pdf" class="btn btn-primary" id="cv">Voir le CV</a>
+            <article id="parcours">
+                <div class="parcours">
+                    <h2>Parcours</h2>
+                    <p>J'ai fait un BTS SIO (Service Informatique aux Organisations) et des études de graphisme, et après un stage informatique en réseau, je suis parti sur une formation de développeur.</p>
+                    <p>J'ai obtenu un stage en informatique qui s'est bien déroulé (collaborateurs bienveillants, bon environnement), où je préparais et configurais des ordinateurs neufs. A la suite de ce stage, ma tutrice m'a conseillé d'aller vers le développement.</p>
+                    <p>J'ai commencé à réviser les langages HTML et CSS avant d'aller à la formation. J'ai trouvé cela intéressant. La formation se déroule bien et je fais partie des meilleurs de la classe. </p>
+                    <a href="Charly_Delaize.pdf" class="btn btn-primary" id="cv">Voir le CV</a>
+                </div>
             </article>
             <!-- Compétences -->
-            <article class="competences" id="competences">
+            <article id="competences">
+                <div class="competences">
                 <h2>Compétences</h2>
-                {# <table>
-                    <tr>
-                        <th>Front</th>
-                        <th>Back</th>
-                        <th>Autres</th>
-                    </tr>
-                    <tr>
-                        <td><a href="read-competences/4" class="voirCompetences"><img src="images/html.png" alt="html"> HTML</a></td>
-                        <td><a href="read-competences/7" class="voirCompetences"><img src="images/php.png" alt="php"> PHP</a></td>
-                        <td><a href="read-competences/10" class="voirCompetences"><img src="images/git.png" alt="git"> Git</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="read-competences/5" class="voirCompetences"><img src="images/css.png" alt="css"> CSS</a></td>
-                        <td><a href="read-competences/9" class="voirCompetences"><img src="images/angular2.png" alt="angular"> Angular</a></td>
-                        <td><a href="read-competences/18" class="voirCompetences"><img src="images/visual_studio.png" alt="visual"> Visual Studio Code</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="read-competences/6" class="voirCompetences"><img src="images/javascript.png" alt="javascript"> Javascript</a></td>
-                        <td><a href="read-competences/11" class="voirCompetences"><img src="images/ajax2.png" alt="ajax"> Ajax</a></td>
-                        <td><a href="read-competences/19" class="voirCompetences"><img src="images/xampp.png" alt="xampp"> Xampp</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="read-competences/8" class="voirCompetences"><img src="images/wordpress.png" alt="wordpress"> Wordpress</a></td>
-                        <td><a href="read-competences/12" class="voirCompetences"><img src="images/symphony2.png" alt="symfony"> Symfony</a></td>
-                        <td><a href="read-competences/20" class="voirCompetences"><img src="images/gitkraken.png" alt="gitkraken"> Gitkraken</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="read-competences/21" class="voirCompetences"><img src="images/bootstrap.png" alt="bootstrap"> Bootstrap</a></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table> #}
-                {% for competences in lists %}
-                    <table class="langages">
+                    {# <table>
                         <tr>
-                            <td>
-                                <a href="read-competences/{{competences.id}}" class="voirCompetences"><img src="{{ competences.logo }}" alt="logo" style="width:30px"> {{ competences.titre }}</a>
-                            </td>
+                            <th>Front</th>
+                            <th>Back</th>
+                            <th>Autres</th>
                         </tr>
-                    </table>
-                {% endfor %}
-                <!-- <ul>
-                    <li><i class="fab fa-git-alt"></i></li>
-                    <li><i class="fab fa-html5"></i></li>
-                    <li><i class="fab fa-css3-alt"></i></li>
-                    <li><i class="fab fa-js"></i></li>
-                    <li><i class="fab fa-wordpress"></i></li>
-                    <li><i class="fab fa-bootstrap"></i></li>
-                    <li><i class="fab fa-php"></i></li>
-                    <li><i class="fab fa-angular"></i></li>
-                    <li><i class="fab fa-symfony"></i></li>
-                    <li><i class="fab fa-gitkraken"></i></li>
-                </ul> -->
+                        <tr>
+                            <td><a href="read-competences/4" class="voirCompetences"><img src="images/html.png" alt="html"> HTML</a></td>
+                            <td><a href="read-competences/7" class="voirCompetences"><img src="images/php.png" alt="php"> PHP</a></td>
+                            <td><a href="read-competences/10" class="voirCompetences"><img src="images/git.png" alt="git"> Git</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="read-competences/5" class="voirCompetences"><img src="images/css.png" alt="css"> CSS</a></td>
+                            <td><a href="read-competences/9" class="voirCompetences"><img src="images/angular2.png" alt="angular"> Angular</a></td>
+                            <td><a href="read-competences/18" class="voirCompetences"><img src="images/visual_studio.png" alt="visual"> Visual Studio Code</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="read-competences/6" class="voirCompetences"><img src="images/javascript.png" alt="javascript"> Javascript</a></td>
+                            <td><a href="read-competences/11" class="voirCompetences"><img src="images/ajax2.png" alt="ajax"> Ajax</a></td>
+                            <td><a href="read-competences/19" class="voirCompetences"><img src="images/xampp.png" alt="xampp"> Xampp</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="read-competences/8" class="voirCompetences"><img src="images/wordpress.png" alt="wordpress"> Wordpress</a></td>
+                            <td><a href="read-competences/12" class="voirCompetences"><img src="images/symphony2.png" alt="symfony"> Symfony</a></td>
+                            <td><a href="read-competences/20" class="voirCompetences"><img src="images/gitkraken.png" alt="gitkraken"> Gitkraken</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="read-competences/21" class="voirCompetences"><img src="images/bootstrap.png" alt="bootstrap"> Bootstrap</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table> #}
+                    {% for competences in lists %}
+                        <table class="langages">
+                            <tr>
+                                <td>
+                                    <a href="read-competences/{{competences.id}}" class="voirCompetences"><img src="{{ competences.logo }}" alt="logo" style="width:30px"> {{ competences.titre }}</a> {{ competences.niveau }}
+                                </td>
+                            </tr>
+                        </table>
+                    {% endfor %}
+                    <!-- <ul>
+                        <li><i class="fab fa-git-alt"></i></li>
+                        <li><i class="fab fa-html5"></i></li>
+                        <li><i class="fab fa-css3-alt"></i></li>
+                        <li><i class="fab fa-js"></i></li>
+                        <li><i class="fab fa-wordpress"></i></li>
+                        <li><i class="fab fa-bootstrap"></i></li>
+                        <li><i class="fab fa-php"></i></li>
+                        <li><i class="fab fa-angular"></i></li>
+                        <li><i class="fab fa-symfony"></i></li>
+                        <li><i class="fab fa-gitkraken"></i></li>
+                    </ul> -->
+                </div>
             </article>
             <!-- Portfolio -->
             <article id="portfolio">

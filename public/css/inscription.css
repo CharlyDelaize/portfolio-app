@@ -1,7 +1,11 @@
 @media (max-width: 490px){
     body{
+        background-image: url("../images/fond-accueil4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
         margin: 0 auto;
-        background-color: rgb(234, 234, 234);
+        color: maroon;
     }
 
     .navbar{
@@ -15,6 +19,14 @@
         margin: 0 auto;
     }
 
+    .inscription{
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 90%;
+        margin: 0 auto;
+        padding: 1em;
+        margin-top: 1em;
+    }
+
     h2{
         text-align: center;
         margin-top: 1em;
@@ -23,17 +35,20 @@
     }
 
     .formulaire{
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
     }
 
     button{
-        float: left;
         margin-top: 1em;
+        display: inline;
     }
 
     #retour{
-        margin-left: 1em;
+        float: left;
+        margin-top: 2em;
+        background-color: maroon;
+        border: none;
     }
 
     #retour a{
@@ -52,8 +67,12 @@
 
 @media (min-width: 491px) and (max-width: 959px){
     body{
+        background-image: url("../images/fond-accueil3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
         margin: 0 auto;
-        background-color: rgb(234, 234, 234);
+        color: maroon;
     }
 
     .navbar{
@@ -67,23 +86,34 @@
         margin: 0 auto;
     }
 
+    .inscription{
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 90%;
+        margin: 0 auto;
+        padding: 1em;
+        margin-top: 1em;
+    }
+
     h2{
         text-align: center;
         margin-top: 1em;
     }
 
     .formulaire{
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
     }
 
     button{
-        float: left;
         margin-top: 1em;
+        display: inline;
     }
 
     #retour{
-        margin-left: 1em;
+        float: left;
+        margin-top: 2em;
+        background-color: maroon;
+        border: none;
     }
 
     #retour a{
@@ -102,8 +132,12 @@
 
 @media (min-width: 960px) and (max-width: 1280px){
     body{
+        background-image: url("../images/fond-accueil2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
         margin: 0 auto;
-        background-color: rgb(234, 234, 234);
+        color: maroon;
     }
 
     .navbar{
@@ -117,6 +151,14 @@
         margin: 0 auto;
     }
 
+    .inscription{
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 70%;
+        margin: 0 auto;
+        padding: 1em;
+        margin-top: 1em;
+    }
+
     h2{
         text-align: center;
         margin-top: 1em;
@@ -128,12 +170,15 @@
     }
 
     button{
-        float: left;
         margin-top: 1em;
+        display: inline;
     }
 
     #retour{
-        margin-left: 1em;
+        float: left;
+        margin-top: 2em;
+        background-color: maroon;
+        border: none;
     }
 
     #retour a{
@@ -152,8 +197,12 @@
 
 @media (min-width: 1281px){
     body{
+        background-image: url("../images/fond-accueil1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
         margin: 0 auto;
-        background-color: rgb(234, 234, 234);
+        color: maroon;
     }
 
     .navbar{
@@ -167,6 +216,14 @@
         margin: 0 auto;
     }
 
+    .inscription{
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 50%;
+        margin: 0 auto;
+        padding: 1em;
+        margin-top: 1em;
+    }
+
     h2{
         text-align: center;
         margin-top: 1em;
@@ -178,12 +235,15 @@
     }
 
     button{
-        float: left;
         margin-top: 1em;
+        display: inline;
     }
 
     #retour{
-        margin-left: 1em;
+        float: left;
+        margin-top: 2em;
+        background-color: maroon;
+        border: none;
     }
 
     #retour a{
