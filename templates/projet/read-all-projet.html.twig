@@ -25,14 +25,14 @@
     <table class="table-secondary">
         <thead>
             <tr>
-                <td>Nom</td>
-                <td>Image</td>
+                <td style="color:white;">Nom</td>
+                <td style="color:white;">Image</td>
             </tr>
         </thead>
         <tbody>
             {% for projet in lists %}
                 <tr>
-                    <td>{{ projet.nom }}</td>
+                    <td style="color:white;">{{ projet.nom }}</td>
                     <td><img src="{{ projet.image }}" alt="screenshot"></td>
                     <td><button class="btn btn-light"><a href="read-projet/{{projet.id}}"><i class="far fa-eye" id="eye"></i></a></button></td>
                     <td><button class="btn btn-light"><a href="edit-projet/{{projet.id}}"><i class="fas fa-pencil-alt" id="pencil"></i></a></button></td>
@@ -41,9 +41,9 @@
             {% endfor %}
         </tbody>
     </table>
-    <button type="button" class="btn btn-primary" id="bouton"><a href="projet" id="AjoutProjet">Ajouter un projet</a></button>
-    <button type="button" class="btn btn-primary" id="bouton"><a href="read-all" id="AjoutProjet">Voir les messages</a></button>
-    <button type="button" class="btn btn-primary" id="bouton"><a href="read-all-competences" id="AjoutProjet">Voir les compétences</a></button>
+    <button type="button" class="btn btn-primary" id="bouton1"><a href="projet" id="AjoutProjet">Ajouter un projet</a></button>
+    <button type="button" class="btn btn-primary" id="bouton2"><a href="read-all" id="AjoutProjet">Voir les messages</a></button>
+    <button type="button" class="btn btn-primary" id="bouton3"><a href="read-all-competences" id="AjoutProjet">Voir les compétences</a></button>
     <a href="#header"><i class="fas fa-arrow-up" id="fleche"></i></a>
     <footer>
         &copy; 2021, Charly Delaize

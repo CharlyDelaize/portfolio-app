@@ -23,17 +23,17 @@
     <table class="table-secondary">
         <thead>
             <tr>
-                <td>Nom</td>
-                <td>Prénom</td>
-                <td>E-mail</td>
+                <td style="color:white;">Nom</td>
+                <td style="color:white;">Prénom</td>
+                <td style="color:white;">E-mail</td>
             </tr>
         </thead>
         <tbody>
         {% for contact in liste %}
             <tr>
-                <td>{{ contact.nom }}</td>
-                <td>{{ contact.prenom }}</td>
-                <td>{{ contact.email }}</td>
+                <td style="color:white;">{{ contact.nom }}</td>
+                <td style="color:white;">{{ contact.prenom }}</td>
+                <td style="color:white;">{{ contact.email }}</td>
                 <td><a href="read/{{contact.id}}" class="btn btn-light"><i class="far fa-eye" id="eye"></i></a></td>
                 <td><a href="edit/{{contact.id}}" class="btn btn-light"><i class="fas fa-pencil-alt" id="pencil"></i></a></td>
                 <td><a href="delete/{{contact.id}}" class="btn btn-light"><i class="fas fa-trash" id="trash"></i></a></td>

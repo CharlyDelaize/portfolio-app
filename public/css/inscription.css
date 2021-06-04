@@ -5,7 +5,7 @@
         background-size: cover;
         background-attachment: fixed;
         margin: 0 auto;
-        color: maroon;
+        color: white;
     }
 
     .navbar{
@@ -20,7 +20,8 @@
     }
 
     .inscription{
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
         width: 90%;
         margin: 0 auto;
         padding: 1em;
@@ -72,7 +73,7 @@
         background-size: cover;
         background-attachment: fixed;
         margin: 0 auto;
-        color: maroon;
+        color: white;
     }
 
     .navbar{
@@ -87,7 +88,8 @@
     }
 
     .inscription{
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
         width: 90%;
         margin: 0 auto;
         padding: 1em;
@@ -137,7 +139,7 @@
         background-size: cover;
         background-attachment: fixed;
         margin: 0 auto;
-        color: maroon;
+        color: white;
     }
 
     .navbar{
@@ -152,7 +154,8 @@
     }
 
     .inscription{
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
         width: 70%;
         margin: 0 auto;
         padding: 1em;
@@ -202,7 +205,7 @@
         background-size: cover;
         background-attachment: fixed;
         margin: 0 auto;
-        color: maroon;
+        color: white;
     }
 
     .navbar{
@@ -217,7 +220,8 @@
     }
 
     .inscription{
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
         width: 50%;
         margin: 0 auto;
         padding: 1em;

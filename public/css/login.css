@@ -5,7 +5,7 @@
         background-size: cover;
         background-attachment: fixed;
         margin: 0 auto;
-        color: maroon;
+        color: white;
     }
 
     .navbar{
@@ -35,7 +35,8 @@
         margin: 0 auto;
         margin-top: 2em;
         margin-left: 6em;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
         padding: 1em;
     }
 
@@ -70,7 +71,7 @@
         background-size: cover;
         background-attachment: fixed;
         margin: 0 auto;
-        color: maroon;
+        color: white;
     }
 
     .navbar{
@@ -100,7 +101,8 @@
         margin: 0 auto;
         margin-top: 2em;
         margin-left: 7em;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
         padding: 1em;
     }
 
@@ -136,7 +138,7 @@
         background-size: cover;
         background-attachment: fixed;
         margin: 0 auto;
-        color: maroon;
+        color: white;
     }
 
     .navbar{
@@ -166,7 +168,8 @@
         margin: 0 auto;
         margin-top: 2em;
         margin-left: 5em;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
         padding: 1em;
     }
 
@@ -201,7 +204,7 @@
         background-size: cover;
         background-attachment: fixed;
         margin: 0 auto;
-        color: maroon;
+        color: white;
     }
 
     .navbar{
@@ -231,7 +234,8 @@
         margin: 0 auto;
         margin-top: 2em;
         margin-left: 25em;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
         padding: 1em;
     }
 

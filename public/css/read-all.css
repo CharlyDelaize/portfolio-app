@@ -5,7 +5,7 @@
         background-size: cover;
         background-attachment: fixed;
         margin: 0 auto;
-        color: maroon;
+        color: white;
     }
     
     .navbar{
@@ -37,6 +37,8 @@
         margin: 0 auto;
         margin-top: 2em;
         width: 50%;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
     }
     
     table thead{
@@ -49,12 +51,11 @@
 
     table i{
         font-size: 10px;
-        color: maroon
+        color: black
     }
     
     #retourAccueil{
         margin-top: 2em;
-        background-color: maroon;
         border: none;
     }
     
@@ -66,7 +67,6 @@
     #voirCompetences{
         margin-top: 2em;
         margin-left: 0.5em;
-        background-color: maroon;
         border: none;
     }
     
@@ -100,7 +100,7 @@
         background-size: cover;
         background-attachment: fixed;
         margin: 0 auto;
-        color: maroon;
+        color: white;
     }
     
     .navbar{
@@ -129,6 +129,8 @@
     table{
         margin: 0 auto;
         margin-top: 2em;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
     }
     
     table thead{
@@ -140,12 +142,11 @@
     }
 
     table i{
-        color: maroon;
+        color: black;
     }
     
     #retourAccueil{
         margin-top: 2em;
-        background-color: maroon;
         border: none;
     }
     
@@ -157,7 +158,6 @@
     #voirCompetences{
         margin-top: 2em;
         margin-left: 10em;
-        background-color: maroon;
         border: none;
     }
     
@@ -190,7 +190,7 @@
         background-size: cover;
         background-attachment: fixed;
         margin: 0 auto;
-        color: maroon;
+        color: white;
     }
     
     .navbar{
@@ -219,6 +219,8 @@
     table{
         margin: 0 auto;
         margin-top: 2em;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
     }
     
     table thead{
@@ -230,12 +232,11 @@
     }
 
     table i{
-        color: maroon;
+        color: black;
     }
     
     #retourAccueil{
         margin-top: 2em;
-        background-color: maroon;
         border: none;
     }
     
@@ -247,8 +248,6 @@
     #voirCompetences{
         margin-top: 2em;
         margin-left: 20em;
-        background-color: maroon;
-        border: none;
     }
     
     #retourAccueil a{
@@ -280,7 +279,7 @@
         background-size: cover;
         background-attachment: fixed;
         margin: 0 auto;
-        color: maroon;
+        color: white;
     }
     
     .navbar{
@@ -309,7 +308,8 @@
     table{
         margin: 0 auto;
         margin-top: 2em;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
     }
     
     table thead{
@@ -321,13 +321,11 @@
     }
 
     table i{
-        color: maroon;
+        color: black;
     }
     
     #retourAccueil{
         margin-top: 2em;
-        background-color: maroon;
-        border: none;
     }
     
     #voirCompetences a{
@@ -338,8 +336,6 @@
     #voirCompetences{
         margin-top: 2em;
         margin-left: 45em;
-        background-color: maroon;
-        border: none;
     }
     
     #retourAccueil a{

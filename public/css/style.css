@@ -38,8 +38,9 @@
     }
 
     h1{
-        color : maroon;
-        background-color: rgba(255, 255, 255, 0.5);
+        color : white;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
         font-weight: bold;
         width: 70%;
         margin: 0 auto;
@@ -47,6 +48,16 @@
 
     h1, h2{
         text-align: center;
+    }
+
+    .connexion{
+        color: white;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    .connexion:hover{
+        color: white;
     }
 
     /* A propos */
@@ -57,8 +68,9 @@
     }
 
     .propos{
-        color: maroon;
-        background-color: rgba(255, 255, 255, 0.6);
+        color: white;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
         padding: 1em;
         width: 90%;
         margin: 0 auto;
@@ -75,8 +87,9 @@
     }
 
     .parcours{
-        color: maroon;
-        background-color: rgba(255, 255, 255, 0.6);
+        color: white;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
         padding: 1em;
         width: 90%;
         margin: 0 auto;
@@ -89,7 +102,7 @@
     #cv{
         margin-left: 5em;
         margin-top: 1em;
-        background-color: maroon;
+        background-color: rgb(0, 119, 170);
         border: none;
     }
 
@@ -101,8 +114,10 @@
     /* Compétences */
 
     .competences{
-        color: maroon;
-        background-color: rgba(255, 255, 255, 0.6);
+        color: white;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-top-left-radius: 3%;
+        border-top-right-radius: 3%;
         width: 90%;
         margin: 0 auto;
         padding: 2em;
@@ -131,8 +146,8 @@
     #portfolio{
         margin: 0 auto;
         width: 90%;
-        color: maroon;
-        background-color: rgba(255, 255, 255, 0.6);
+        color: white;
+        background-color: rgba(125, 125, 125, 0.7);
     }
 
     .projet{
@@ -142,8 +157,10 @@
     /* Contact */
 
     .contact{
-        color: maroon;
-        background-color: rgba(255, 255, 255, 0.6);
+        color: white;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-bottom-left-radius: 3%;
+        border-bottom-right-radius: 3%;
         width: 90%;
         margin: 0 auto;
         padding: 1em;
@@ -163,6 +180,8 @@
 
     .formulaire button{
         margin-top: 1em;
+        background-color: rgb(0, 119, 170);
+        border: none;
     }
 
     #voirMessage{
@@ -171,13 +190,7 @@
     }
 
     #fleche{
-        float: right;
-        margin-right: 3em;
-        font-size: 24px;
-        background-color: rgb(0, 149, 213);
-        color: white;
-        padding: 0.5em;
-        border-radius: 50%;
+        visibility: hidden;
     }
 
     /* FOOTER */
@@ -258,15 +271,26 @@
 
     h1{
         padding: 0.5em;
-        color : maroon;
+        color : white;
         margin: 0 auto;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
         font-weight: bold;
         width: 50%;
     }
 
     h1, h2{
         text-align: center;
+    }
+
+    .connexion{
+        color: white;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    .connexion:hover{
+        color: white;
     }
 
     /* A propos */
@@ -277,8 +301,9 @@
     }
 
     .propos{
-        color: maroon;
-        background-color: rgba(255, 255, 255, 0.5);
+        color: white;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
         padding: 1em;
         width: 50%;
         margin: 0 auto;
@@ -296,9 +321,10 @@
     }
 
     .parcours{
-        color: maroon;
+        color: white;
         padding: 1em;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
         width: 50%;
         margin: 0 auto;
     }
@@ -309,7 +335,7 @@
 
     #cv{
         margin-left: 10.5em;
-        background-color: maroon;
+        background-color: rgb(0, 119, 170);
         border:none;
     }
 
@@ -327,8 +353,9 @@
 
     .competences{
         width: 60%;
-        background-color: rgba(255, 255, 255, 0.5);
-        color: maroon;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
+        color: white;
         margin: 0 auto;
         padding: 2em;
     }
@@ -354,18 +381,19 @@
     /* Portfolio */
 
     #portfolio{
-        color: maroon;
+        color: white;
         margin: 0 auto;
         width: 65%;
-        margin-bottom: 30em;
+        margin-bottom: 50em;
     }
 
     /* Contact */
 
     .contact{
         width: 60%;
-        background-color: rgba(255, 255, 255, 0.5);
-        color: maroon;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
+        color: white;
         margin: 0 auto;
         padding: 1em;
     }
@@ -386,6 +414,7 @@
 
     .formulaire button{
         margin-top: 1em;
+        background-color: rgb(0, 119, 170);
     }
 
     #voirMessage{
@@ -453,6 +482,7 @@
         background-size: cover;
         background-attachment: fixed;
         margin: 0 auto;
+        font-size: 18px;
     }
 
     /* HEADER */
@@ -474,21 +504,34 @@
     /* MAIN */
 
     .image{
-        padding-top: 25em;
-        padding-bottom: 25em;
+        padding-top: 22em;
+        padding-bottom: 22em;
     }
 
     h1{
-        color : maroon;
+        color : white;
         font-weight: bold;
         font-size: 36px;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
         width: 25%;
         margin: 0 auto;
+        margin-bottom: 17em;
+        padding : 0.5em;
     }
 
     h1, h2{
         text-align: center;
+    }
+
+    .connexion{
+        color: white;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    .connexion:hover{
+        color: white;
     }
 
     /* A propos */
@@ -498,9 +541,13 @@
     }
 
     .propos{
-        color : maroon;
-        margin: 20em;
-        background-color: rgba(255, 255, 255, 0.6);
+        color : white;
+        margin: 0 auto;
+        margin-top: 17em;
+        margin-bottom: 30em;
+        width: 50%;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
         padding: 1em;
     }
 
@@ -515,10 +562,12 @@
     }
 
     .parcours{
-        color : maroon;
-        margin: 20em;
-        margin-top: 17em;
-        background-color: rgba(255, 255, 255, 0.6);
+        color : white;
+        margin: 0 auto;
+        margin-top: 10em;
+        margin-bottom: 40em;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
         padding: 1em;
         width: 50%;
     }
@@ -534,23 +583,26 @@
 
     #cv{
         margin-left: 14.2em;
+        margin-top: 1em;
         width: 20%;
-        background-color: maroon;
+        background-color: rgb(0, 119, 170);
         border: none;
     }
 
     /* Compétences */
 
     #competences{
-        padding-top: 17em;
         padding-bottom: 45em;
     }
 
     .competences{
         width: 85%;
-        color: maroon;
-        background-color: rgba(255, 255, 255, 0.6);
+        color: white;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
         margin: 0 auto;
+        margin-top: 20em;
+        margin-bottom: 17em;
         padding: 5em;
     }
 
@@ -575,9 +627,17 @@
 
     /* Portfolio */
 
+    #portfolio h2{
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
+        margin-top: 0.1em;
+        
+    }
+
     #portfolio{
         margin: 0 auto;
-        width: 68%;
+        width: 56%;
+        padding-top: 13em;
         margin-bottom: 13em;
     }
 
@@ -589,11 +649,14 @@
     .contact{
         width: 80%;
         margin: 0 auto;
-        background-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
+        color: white;
         padding-bottom: 25em;
     }
 
     .contact h2{
+        padding-top: 2em;
         padding-bottom: 1em;
     }
 
@@ -611,6 +674,8 @@
 
     .formulaire button{
         margin-top: 1em;
+        background-color: rgb(0, 119, 170);
+        border: none;
     }
 
     #voirMessage{
@@ -678,6 +743,7 @@
         background-size: cover;
         background-attachment: fixed;
         margin: 0 auto;
+        font-size: 20px;
     }
 
     /* HEADER */
@@ -699,36 +765,50 @@
     /* MAIN */
 
     .image{
-        padding-top: 30em;
-        padding-bottom: 30em;
+        padding-top: 25em;
+        padding-bottom: 25em;
     }
 
     h1{
-        color : maroon;
+        color : white;
         font-weight: bold;
         font-size: 48px;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
         width: 30%;
         margin: 0 auto;
+        padding : 0.5em;
     }
 
     h1, h2{
         text-align: center;
-        color : maroon;
+        color : white;
+    }
+
+    .connexion{
+        color: white;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    .connexion:hover{
+        color: white;
     }
 
     /* A propos */
 
     #propos{
-        padding-top: 0.1em;
+        padding-top: 20em;
     }
 
     .propos{
-        color : maroon;
-        margin: 30em;
-        background-color: rgba(255, 255, 255, 0.6);
+        color : white;
+        margin: 0 auto;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
         padding: 1em;
         width: 50%;
+        margin-bottom: 30em;
     }
 
     .propos h2{
@@ -742,10 +822,12 @@
     }
 
     .parcours{
-        color : maroon;
-        margin: 30em;
-        margin-top: 22em;
-        background-color: rgba(255, 255, 255, 0.6);
+        color : white;
+        margin: 0 auto;
+        margin-top: 15em;
+        margin-bottom: 40em;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
         padding: 1em;
         width: 50%;
     }
@@ -755,9 +837,10 @@
     }
 
     #cv{
+        margin-top: 1em;
         margin-left: 24em;
         width: 16%;
-        background-color: maroon;
+        background-color: rgb(0, 119, 170);
         border: none;
     }
 
@@ -768,13 +851,14 @@
     /* Compétences */
 
     #competences{
-        padding-top: 17em;
+        padding-top: 10em;
         padding-bottom: 45em;
     }
 
     .competences{
-        background-color: rgba(255, 255, 255, 0.6);
-        width: 85%;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
+        width: 80%;
         padding: 1em;
         margin-top: 22em;
         margin: 0 auto;
@@ -789,7 +873,7 @@
     }
 
     .voirCompetences{
-        color: maroon;
+        color: white;
         text-decoration: none;
     }
 
@@ -801,9 +885,17 @@
 
     /* Portfolio */
 
+    #portfolio h2{
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
+        width: 20%;
+        margin: 0 auto;
+        padding: 0.1em;
+    }
+
     #portfolio{
         margin: 0 auto;
-        width: 43%;
+        width: 46%;
         padding-top: 13em;
         margin-bottom: 26em;
     }
@@ -811,14 +903,16 @@
     /* Contact */
 
     #contact{
-        margin-top: 40em;
+        padding-top: 2em;
     }
 
     .contact{
         width: 70%;
         margin: 0 auto;
+        margin-top: 60em;
         padding-bottom: 25em;
-        background-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 3%;
     }
 
     .contact h2{
@@ -829,7 +923,7 @@
         float: left;
         width: 40%;
         margin-left: 5em;
-        color: maroon;
+        color: white;
     }
 
     .formulaire{
@@ -840,7 +934,7 @@
 
     .formulaire button{
         margin-top: 1em;
-        background-color: maroon;
+        background-color: rgb(0, 119, 170);
         border: none;
     }
 
@@ -878,7 +972,7 @@
     }
 
     .whire{
-        float: right;
+        margin-left: 78.3em;
         text-decoration: none;
         color: rgb(0, 149, 213);
         background-color: white;
@@ -888,6 +982,8 @@
         text-align: center;
         border-radius: 10%;
         margin-top: 0.05em;
+        padding-left: 0.18em;
+        padding-right: 0.18em;
         transition: 0.5s;
     }
 

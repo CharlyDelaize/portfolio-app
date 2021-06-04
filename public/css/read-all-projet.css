@@ -13,7 +13,7 @@
         background-size: cover;
         background-attachment: fixed;
         margin: 0 auto;
-        color: maroon;
+        color: white;
     }
 
     .navbar{
@@ -43,6 +43,8 @@
     table{
         margin: 0 auto;
         margin-top: 1em;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 1%;
     }
 
     thead{
@@ -50,18 +52,20 @@
     }
 
     table i{
-        color: maroon;
+        color: black;
     }
 
     td{
         padding: 0.2em;
     }
 
-    #bouton{
-        margin-left: 10em;
+    #bouton1, #bouton2, #bouton3{
+        margin-left: 2em;
         margin-top: 1em;
-        background-color: maroon;
-        border: none;
+    }
+
+    #bouton1{
+        margin-left: 2em;
     }
 
     #AjoutProjet{
@@ -97,7 +101,7 @@
         background-size: cover;
         background-attachment: fixed;
         margin: 0 auto;
-        color: maroon;
+        color: white;
     }
 
     .navbar{
@@ -127,6 +131,8 @@
     table{
         margin: 0 auto;
         margin-top: 1em;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 1%;
     }
 
     thead{
@@ -134,18 +140,20 @@
     }
 
     table i{
-        color: maroon;
+        color: black;
     }
 
     td{
         padding: 0.2em;
     }
 
-    #bouton{
-        margin-left: 0.2em;
+    #bouton1, #bouton2, #bouton3{
+        margin-left: 1em;
         margin-top: 1em;
-        background-color: maroon;
-        border: none;
+    }
+
+    #bouton1{
+        margin-left: 11em;
     }
 
     #AjoutProjet{
@@ -211,10 +219,12 @@
     table{
         margin: 0 auto;
         margin-top: 1em;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 1%;
     }
 
     table i{
-        color: maroon;
+        color: black;
     }
 
     thead{
@@ -225,11 +235,13 @@
         padding: 0.2em;
     }
 
-    #bouton{
-        margin-left: 3em;
+    #bouton1, #bouton2, #bouton3{
+        margin-left: 1em;
         margin-top: 1em;
-        background-color: maroon;
-        border: none;
+    }
+
+    #bouton1{
+        margin-left: 22em;
     }
 
     #AjoutProjet{
@@ -265,7 +277,7 @@
         background-size: cover;
         background-attachment: fixed;
         margin: 0 auto;
-        color: maroon;
+        color: white;
     }
 
     .navbar{
@@ -295,11 +307,12 @@
     table{
         margin: 0 auto;
         margin-top: 1em;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 1%;
     }
 
     table i{
-        color: maroon;
+        color: black;
     }
 
     thead{
@@ -310,11 +323,13 @@
         padding: 0.2em;
     }
 
-    #bouton{
-        margin: 0 auto;
+    #bouton1, #bouton2, #bouton3{
+        margin-left: 1em;
         margin-top: 1em;
-        background-color: maroon;
-        border: none;
+    }
+
+    #bouton1{
+        margin-left: 44em;
     }
 
     #AjoutProjet{
