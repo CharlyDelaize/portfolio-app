@@ -28,7 +28,6 @@
                     <a href="#competences" class="cache">Compétences</a>
                     <a href="#portfolio" class="cache">Portfolio</a>
                     <a href="#contact" class="cache">Contact</a>
-                    <a href="/inscription">Inscription</a>
                 </div>
             </nav>
         </header>
@@ -36,7 +35,7 @@
         <main>
         <article class="image" >
             <div id="image">
-                <h1>Charly <a href="/login" class="connexion">D</a>elaize</h1>
+                <h1><a href="/inscription" class="connexion">C</a>harly <a href="/login" class="connexion">D</a>elaize</h1>
             </div>
         </article>
             <!-- A propos -->
@@ -96,7 +95,7 @@
                         <table class="langages">
                             <tr>
                                 <td>
-                                    <a href="read-competences/{{competences.id}}" class="voirCompetences"><img src="{{ competences.logo }}" alt="logo" style="width:30px"> {{ competences.titre }}</a> {{ competences.niveau }}
+                                    <img src="{{ competences.logo }}" alt="logo" style="width:30px"><span style="color: white;"> {{ competences.titre }}</span> {{ competences.niveau }}
                                 </td>
                             </tr>
                         </table>
@@ -158,9 +157,9 @@
         <!-- FOOTER -->
         <footer>
             &copy; 2021, Charly Delaize
-            <a href="https://github.com/CharlyDelaize" target="_blank"><i class="fab fa-github-square"></i></a>
-            <a href="https://www.linkedin.com/in/charly-delaize-5a771580/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://www.whire.me/@charlydelaize" target="_blank" class="whire">W</a>
+            <a href="https://www.linkedin.com/in/charly-delaize-5a771580/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/CharlyDelaize" target="_blank"><i class="fab fa-github-square"></i></a>
         </footer>
     </body>
 </html>
