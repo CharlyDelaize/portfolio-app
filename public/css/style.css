@@ -15,7 +15,8 @@
         opacity: 0.8;
         flex-direction: row-reverse;
         position: fixed;
-        width: 100%
+        width: 100%;
+        visibility: hidden;
     }
 
     .navbar a{
@@ -628,7 +629,7 @@
     }
 
     .langages{
-        margin-left: 25em;
+        margin-left: 15em;
     }
 
     .voirCompetences{
@@ -656,7 +657,7 @@
 
     #portfolio{
         margin: 0 auto;
-        width: 72%;
+        width: 65%;
         padding-top: 13em;
         margin-bottom: 13em;
     }

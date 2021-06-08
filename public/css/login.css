@@ -31,22 +31,22 @@
     }
 
     .login{
-        width: 75%;
+        width: 90%;
         margin: 0 auto;
         margin-top: 2em;
-        margin-left: 6em;
+        margin-left: 3em;
         background-color: rgba(125, 125, 125, 0.7);
         border-radius: 3%;
         padding: 1em;
     }
 
     form{
-        width: 73%;
+        width: 80%;
     }
 
     button{
         margin-top: 2em;
-        margin-left: 4em;
+        margin-left: 4.85em;
         background-color: maroon;
         border: none;
     }
