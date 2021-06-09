@@ -15,7 +15,7 @@
 </header>
 <form method="post">
     {% if error %}
-        <div class="alert alert-danger" id="error">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+        <div class="alert alert-danger" id="error">{{ error.messageKey|trans(error.messageData, 'security') }}</div> <!-- Message d'erreur -->
     {% endif %}
     
     {# {% if app.user %}
@@ -23,7 +23,7 @@
             You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
         </div>
     {% endif %} #}
-    <div class="login">
+    <div class="login"> <!-- Formulaire de connexion -->
         <h2 class="h3 mb-3 font-weight-normal">Veillez saisir votre addresse e-mail et votre mot de passe</h2>
         <label for="inputEmail">Email</label>
         <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" required autofocus>

@@ -12,18 +12,20 @@
         <nav class="navbar">
             {% if app.user %}
                 <div class="mb-3">
-                    {{ app.user.username }}
+                    {{ app.user.username }} <!-- Affiche le mail de l'utilisateur connecté -->
                 </div>
+            {% else %}
+                <meta http-equiv="refresh" content="durée=0.1s;URL=../login"> <!-- Si l'utilisateur n'est pas connecté, redirection vers la page connection -->
             {% endif %}
             <h1>Admin</h1>
-            <a href="logout">Déconnexion</a>
+            <a href="../logout">Déconnexion</a>
         </nav>
     </header>
     <div class="formulaire">
         {{ form_start(formulaire) }}
             {{ form_row(formulaire.titre) }}
             {{ form_row(formulaire.logo) }}
-            {{ form_row(formulaire.niveau) }}
+            {{ form_row(formulaire.niveau) }} <!-- Affichage du formulaire avec les éléments de la base de données correspondant à l'ID -->
             <button type="submit" class="btn btn-primary">Envoyer</button>
         {{ form_end(formulaire) }}
         <button type="button" class="btn btn-primary"><a href="/read-all-competences" id="voirMessage">Voir mes compétences</a></button>

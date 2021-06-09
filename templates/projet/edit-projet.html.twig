@@ -12,8 +12,10 @@
         <nav class="navbar">
             {% if app.user %}
                 <div class="mb-3">
-                    {{ app.user.username }}
+                    {{ app.user.username }} <!-- Affiche le mail de l'utilisateur connecté -->
                 </div>
+            {% else %}
+                <meta http-equiv="refresh" content="durée=0.1s;URL=../login"> <!-- Si l'utilisateur n'est pas connecté, redirection vers la page connection -->
             {% endif %}
             <h1>Admin</h1>
             <a href="../logout">Déconnexion</a>
@@ -22,7 +24,7 @@
     <div class="formulaire">
         {{ form_start(formulaire) }}
             {{ form_row(formulaire.nom) }}
-            {{ form_row(formulaire.image) }}
+            {{ form_row(formulaire.image) }} <!-- Affichage du formulaire avec les éléments de la base de données correspondant à l'ID-->
             <button type="submit" class="btn btn-primary" id="bouton">Envoyer</button>
         {{ form_end(formulaire) }}
         <button type="button" class="btn btn-primary"><a href="/read-all-projet" id="voirProjet">Voir mes projets</a></button>

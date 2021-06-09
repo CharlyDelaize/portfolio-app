@@ -12,10 +12,10 @@
         <nav class="navbar">
             {% if app.user %}
                 <div class="mb-3">
-                    {{ app.user.username }}
+                    {{ app.user.username }} <!-- Affiche le mail de l'utilisateur connecté -->
                 </div>
             {% else %}
-                <meta http-equiv="refresh" content="durée=0.1s;URL=login">
+                <meta http-equiv="refresh" content="durée=0.1s;URL=login"> <!-- Si l'utilisateur n'est pas connecté, redirection vers la page connection -->
             {% endif %}
             <h1>Admin</h1>
             <a href="logout">Déconnexion</a>

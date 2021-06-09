@@ -18,11 +18,13 @@
             <nav class="navbar">
                 {% if app.user %}
                     <div class="mb-3">
-                        {{ app.user.username }}
+                        {{ app.user.username }} <!-- Affiche le mail de l'utilisateur connecté -->
                     </div>
+                {% else %}
+                    <meta http-equiv="refresh" content="durée=0.1s;URL=../login">
                 {% endif %}
                 <h1>Admin</h1>
-                <a href="logout">Déconnexion</a>
+                <a href="../logout">Déconnexion</a>
             </nav>
         </header>
         <div class="formulaire">
@@ -30,7 +32,7 @@
                 {{ form_row(formulaire.nom) }}
                 {{ form_row(formulaire.prenom) }}
                 {{ form_row(formulaire.email) }}
-                {{ form_row(formulaire.message) }}
+                {{ form_row(formulaire.message) }} <!-- Affichage du formulaire avec les éléments de la base de données correspondant à l'ID-->
                 <button type="submit" class="btn btn-primary" id="valider">Valider</button>
                 <button  type="button" class="btn btn-primary"><a href="/read-all" id="retour">Retour</a></button>
             {{ form_end(formulaire) }}
