@@ -16,7 +16,7 @@ class PortfolioController extends AbstractController
     /**
      * @Route("/", name="portfolio")
      */
-    public function new(Request $request): Response
+    public function new(Request $request, \Swift_Mailer $mailer): Response
     {
         $portfolio = new Portfolio();
 
@@ -26,9 +26,24 @@ class PortfolioController extends AbstractController
 
         if($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
-
+            $contact = $form->getData();            // On crée le message
+            $message = (new \Swift_Message('Nouveau contact'))
+                // On attribue l'expéditeur
+                ->setFrom($contact->getEmail())
+                // On attribue le destinataire
+                ->setTo('charlydelaize@gmail.com')
+                // On crée le texte avec la vue
+                ->setBody(
+                    $this->renderView(
+                        'emails/contact.html.twig', compact('contact')
+                    ),
+                    'text/html'
+                )
+            ;
+            $mailer->send($message);
             $em->persist($portfolio);
             $em->flush();
+            echo "<h3 style='background-color: #a4fcb1; text-align: center;'>Merci d'avoir envoyé un message</h3>";
         }
 
         $repository = $this->getDoctrine()->getRepository(Competences::class);
