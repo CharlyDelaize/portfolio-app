@@ -36,7 +36,7 @@
                     <td><img src="{{ projet.image }}" alt="screenshot"></td>
                     <td><button class="btn btn-light"><a href="read-projet/{{projet.id}}"><i class="far fa-eye" id="eye"></i></a></button></td>
                     <td><button class="btn btn-light"><a href="edit-projet/{{projet.id}}"><i class="fas fa-pencil-alt" id="pencil"></i></a></button></td>
-                    <td><button class="btn btn-light"><a href="delete-projet/{{projet.id}}"><i class="fas fa-trash" id="trash"></i></button></a></td>
+                    <td><button class="btn btn-light"><a href="delete-projet/{{projet.id}}" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce projet ?');"><i class="fas fa-trash" id="trash"></i></button></a></td>
                 </tr>
             {% endfor %}
         </tbody>

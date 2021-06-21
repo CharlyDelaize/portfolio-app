@@ -38,7 +38,7 @@
                 <td style="color:white;">{{ contact.email }}</td> <!-- Affichage des éléments de la base de données -->
                 <td><a href="read/{{contact.id}}" class="btn btn-light"><i class="far fa-eye" id="eye"></i></a></td>
                 <td><a href="edit/{{contact.id}}" class="btn btn-light"><i class="fas fa-pencil-alt" id="pencil"></i></a></td>
-                <td><a href="delete/{{contact.id}}" class="btn btn-light"><i class="fas fa-trash" id="trash"></i></a></td>
+                <td><a href="delete/{{contact.id}}" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce message ?');" class="btn btn-light"><i class="fas fa-trash" id="trash"></i></a></td>
             </tr>
         {% endfor %}
         </tbody>

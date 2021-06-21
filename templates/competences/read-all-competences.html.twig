@@ -36,7 +36,7 @@
                     <td style="color:white;">{{ competences.titre }}</td>
                     <td><button class="btn btn-light"><a href="read-competences/{{competences.id}}"><i class="far fa-eye" id="eye"></i></a></button></td>
                     <td><button class="btn btn-light"><a href="edit-competences/{{competences.id}}"><i class="fas fa-pencil-alt" id="pencil"></i></a></button></td>
-                    <td><button class="btn btn-light"><a href="delete-competences/{{competences.id}}"><i class="fas fa-trash" id="trash"></i></button></a></td>
+                    <td><button class="btn btn-light"><a href="delete-competences/{{competences.id}}" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette compétence?');"><i class="fas fa-trash" id="trash"></i></button></a></td>
                 </tr>
             {% endfor %}
         </tbody>
