@@ -807,8 +807,8 @@
     /* MAIN */
 
     .image{
-        padding-top: 25em;
-        padding-bottom: 25em;
+        padding-top: 22em;
+        padding-bottom: 27em;
     }
 
     h1{
@@ -912,6 +912,8 @@
 
     .langages{
         margin-left: 25em;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
     }
 
     .voirCompetences{
